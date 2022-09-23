@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:900');
+
+
+:root {
+    --dark-blue: #0d0953;
+    --dark-green: #4F5309;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.hero {
+    background: url("https://images.unsplash.com/photo-1542500121-0d07e29f27f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") no-repeat fixed center top;
+    height: 95vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.hero .nav-bar {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.hero .logo {
+    text-shadow: 1px 1px 3px #000;
+    font-family: "Kanit";
+    font-size: 5rem;
+}
+
+.hero .nav-bar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.hero .nav-bar li {
+    cursor: pointer;
+}
+
+.hero .nav-bar li:hover {
+    font-weight: 700;
+}
+
+.sticky-bar {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+}
+
+.sticky-bar ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    list-style: none;
+    position: sticky;
+}
+
+.sticky-bar ul li {
+    text-align: center;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.sticky-bar ul li:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.github div {
+    background-image: url("./logos/linkedin-full");
+}
+
+.linkedin div {
+    background-image: url("./logos/linkedin-full");
+}
+
+.hero ul .current::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: red;
+}
+
+.hero .intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+
+.hero .intro p {
+    opacity: 0.8;
+    color: grey;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top:0;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    color: black;
+    margin: 1rem 0;
+    /* text-shadow: 2px 2px white; */
+    font-family: 'Lora', serif;
+} 
+
+h2 {
+    /* font-family: 'Epilogue', sans-serif; */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.about_section,
+.projects_section,
+.contact_section {
+    max-width: 1100px;
+    margin: 50px 20%;
+}
+
+.about p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.skills_section {
+    background-color: #0d0953;
+    color: white;
+}
+
+.skills_section h2 {
+    margin-left: 20%;
+}
+
+.skills_container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    gap: 50px;
+    list-style: none;
+    margin: 50px 20%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    transition: all 0.1s ease;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+    letter-spacing: 2px;
+}
+
+.skill h4 {
+    margin: 25px auto;
+}
+
+.project {
+    display: flex;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.project div:first-child {
+    background: lightgrey;
+    min-width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.project:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.project-infos h4 {
+    margin-bottom: 0;
+}
+
+.project-infos p {
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 15px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.demo_btn {
+    background-color: #0d0953;
+    color: white;
+}
+
+.code_btn {
+    background-color: lightgrey;
+    color: black;
+}
+
+/* .contact_section {
+    margin: auto;
+} */
+
+@media screen and (max-width: 992px) {
+    .sticky-bar {
+        display: none;
+    }
+
+    .skills_container,
+    .about_section,
+    .projects_section {
+        margin: 10% !important;
+    }
+
+    .skills_container {
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    }
+
+    .skill {
+        max-width: 50px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
