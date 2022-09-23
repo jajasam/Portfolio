@@ -14,27 +14,30 @@ body {
     font-size: 1.25rem;
 }
 
+/* 
+***************************************
+        HERO
+***************************************
+*/
+
 .hero {
     background: url("https://images.unsplash.com/photo-1542500121-0d07e29f27f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") no-repeat fixed center top;
     height: 95vh;
     width: 100vw;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
     box-shadow: 0 4px 2px -2px gray;
 }
 
 .hero .nav-bar {
-    border: 1px solid red;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
-    margin: 0 1rem;
+    margin: 0 4rem 0 2rem;
 }
 
-.hero .logo {
-    text-shadow: 1px 1px 3px #000;
-    font-family: "Kanit";
-    font-size: 5rem;
-}
+/* .hero .logo {
+    font-size: 3rem;
+} */
 
 .hero .nav-bar ul {
     list-style: none;
@@ -52,45 +55,6 @@ body {
 
 .hero .nav-bar li:hover {
     font-weight: 700;
-}
-
-.sticky-bar {
-    position: absolute;
-    top: 6rem;
-    left: 0;
-}
-
-.sticky-bar ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    list-style: none;
-    position: sticky;
-}
-
-.sticky-bar ul li {
-    text-align: center;
-    border: 1px solid var(--dark-blue);
-    color: var(--dark-blue);
-    padding: 2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.1s ease;
-}
-
-.sticky-bar ul li:hover {
-    background-color: var(--dark-blue);
-    color: white;
-}
-
-.github div {
-    background-image: url("./logos/linkedin-full");
-}
-
-.linkedin div {
-    background-image: url("./logos/linkedin-full");
 }
 
 .hero ul .current::after {
@@ -127,15 +91,78 @@ h1 {
     font-family: 'Lora', serif;
 } 
 
-h2 {
-    /* font-family: 'Epilogue', sans-serif; */
+/* 
+***************************************
+        STICKY BAR
+***************************************
+*/
+
+.sticky-bar {
+    position: fixed;
+    top: 10rem;
+    left: 0;
 }
+
+.sticky-bar ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    list-style: none;
+}
+
+.sticky-bar ul li {
+    text-align: center;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+/* .sticky-bar ul li:hover {
+    background-color: var(--dark-blue);
+    color: white;
+} */
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.github .icon {
+    background: no-repeat url("./logos/socials-github-black.png") center;
+}
+
+.linkedin .icon {
+    background: no-repeat url("./logos/contact-linkedin-full.png") center;
+}
+/* 
+.linkedin:hover {
+    background-color: var(--dark-blue);
+} */
+
+/* .linkedin:hover .icon {
+    background-image: url("./logos/contact-linkedin-white.png");
+} */
+
+/* 
+***************************************
+        MAIN
+***************************************
+*/
 
 
 main {
     display: flex;
     flex-direction: column;
     gap: 100px;
+}
+
+h2 {
+    /* font-family: 'Epilogue', sans-serif; */
 }
 
 .about_section,
@@ -149,6 +176,12 @@ main {
     line-height: 1.8;
     text-align: justify;
 }
+
+/* 
+***************************************
+        SKILLS
+***************************************
+*/
 
 .skills_section {
     background-color: #0d0953;
@@ -182,6 +215,12 @@ main {
 .skill h4 {
     margin: 25px auto;
 }
+
+/* 
+***************************************
+        PROJETS
+***************************************
+*/
 
 .project {
     display: flex;
@@ -230,6 +269,12 @@ main {
 /* .contact_section {
     margin: auto;
 } */
+
+/* 
+***************************************
+        MEDIA QUERIES
+***************************************
+*/
 
 @media screen and (max-width: 992px) {
     .sticky-bar {

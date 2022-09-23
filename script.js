@@ -16,13 +16,7 @@ const projects = [
         linkToCode: "https://github.com/jajasam/To-do-app",
     },
     {
-        title: "Lorem25",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
-        linkToDemo: "",
-        linkToCode: "",
-    },
-    {
-        title: "Lorem25",
+        title: "Battleship",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
         linkToDemo: "",
         linkToCode: "",
