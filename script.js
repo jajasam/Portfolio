@@ -1,31 +1,36 @@
 const skillsContainer = document.querySelector(".skills_container");
 const projectsContainer = document.querySelector(".projects_container");
+let language;
 
 const skills = ["HTML","CSS", "JavaScript", "React", "Bootstrap", "VSC", "Git", "Figma"];
 const projects = [
     {
         title: "E-commerce",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
+        description: "Ecommerce app for audio systems built with React.",
         linkToDemo: "https://aesthetic-centaur-7df753.netlify.app/",
         linkToCode: "https://github.com/jajasam/Ecommerce-app",
+        preview: "./projects-preview/Ecomm.png"
     },
     {
         title: "To do list",
-        description: "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive and offers two modes, lgiht and dark, and is highly convenient for managing tasks.",
+        description: "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive, offers two modes (light and dark) and contains a drag and drop functionnality to reorder the todos.",
         linkToDemo: "https://jajasam.github.io/To-do-app/",
         linkToCode: "https://github.com/jajasam/To-do-app",
+        preview: "./projects-preview/Todo.png"
     },
     {
-        title: "Battleship",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
+        title: "Weather App",
+        description: "API",
         linkToDemo: "",
         linkToCode: "",
+        preview: ""
     },
     {
         title: "This portfolio",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
         linkToDemo: "janasamson.com",
         linkToCode: "",
+        preview: ""
     }
 ]
 
@@ -47,11 +52,11 @@ function displayProjects () {
     let markup = "";
 
     for (let i = 0; i < projects.length; i++) {
-        const {title, description, linkToDemo, linkToCode} = projects[i];
+        const {title, description, linkToDemo, linkToCode, preview} = projects[i];
 
         markup +=  `
         <div class="project">
-            <div></div>
+            <img src="${preview}" class="project-preview" />
             <div class="project-infos">
                 <h4>${title}</h4>
                 <p>${description}</p>

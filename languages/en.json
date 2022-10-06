@@ -1,0 +1,52 @@
+{
+    "nav-bar":
+    {
+        "about":"About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "header": 
+    {
+        "welcome": "Hello, I'm",
+        "role": "front-end web developer",
+        "contact me": "Contact me"
+    },
+    "about-section":
+    {
+        "title": "About",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. Aliquam, aut animi perspiciatis, deleniti recusandae delectus libero, reiciendis excepturi et laboriosam aspernatur veniam natus praesentium cumque nam dolorem sunt accusantium voluptates quis maiores ut? Fuga, minus. Perspiciatis magni unde id quos nemo laborum. Self-taught web developer from Montreal."
+    },
+    "skills-section": 
+    {
+        "title": "Skills"
+    },
+    "projects-section": 
+    {
+        "1" : {
+            "title": "E-commerce",
+            "description": "Ecommerce app for audio systems built with React."
+        },
+        "2" : {
+            "title": "To do list",
+            "description": "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive, offers two modes (light and dark) and contains a drag and drop functionnality to reorder the todos."
+        },
+        "3" : {
+            "title": "Weather App",
+            "description": "API"
+        },
+        "4" : {
+            "title": "This portfolio",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus."
+        }
+    },  
+    "contact-section": 
+    {
+        "title": "Let's get in touch",
+        "name": "name",
+        "message": "message"
+    },
+    "footer": {
+        "info": "2022 - Created by Jana Samson"
+    }
+}
