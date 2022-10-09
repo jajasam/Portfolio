@@ -1,5 +1,8 @@
 const skillsContainer = document.querySelector(".skills_container");
 const projectsContainer = document.querySelector(".projects_container");
+const langBtn = document.querySelector(".lang-btn");
+
+
 let language;
 
 const skills = ["HTML","CSS", "JavaScript", "React", "Bootstrap", "VSC", "Git", "Figma"];
@@ -30,7 +33,7 @@ const projects = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
         linkToDemo: "janasamson.com",
         linkToCode: "",
-        preview: ""
+        preview: "./projects-preview/Portfolio.jpeg"
     }
 ]
 
@@ -73,3 +76,9 @@ function displayProjects () {
  
 displaySkills();
 displayProjects();
+
+function setLanguage() {
+    langBtn.textContent = language === "en" ? "FR" : "EN";
+}
+
+langBtn.addEventListener("click", setLanguage)

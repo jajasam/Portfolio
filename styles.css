@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kanit:900');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
 
 
 
 :root {
     --dark-blue: #0d0953;
+    --very-dark-blue: #040437;
     --dark-green: #4F5309;
     --light: #ece5e4;
+    --orange: #ECE5E4;
 }
 
 body {
@@ -63,9 +67,13 @@ header {
 }
 
 .logo {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: black;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Fascinate', cursive;
+    margin-top: 0.5rem;
+    color: var(--dark-blue);
+
 }
 
 .hero_section {
@@ -78,15 +86,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin: auto;
-    gap:  10rem;
+    gap:  6rem;
     /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%); */
     /* box-shadow: 0 4px 2px -2px gray; */
 }
 
 .hero_section img {
-    max-height: 50vh;
+    max-height: 60vh;
     /* height: 90vh; */
     /* position: absolute;
     right: 150px;
@@ -217,7 +225,7 @@ h1 {
 
 .sticky-bar ul li {
     text-align: center;
-    background: #ECE5E4;
+    background: #b5a5a1;
     padding: 1rem;
     border-radius: 50%;
     cursor: pointer;
@@ -244,7 +252,7 @@ h1 {
 }
 
 .linkedin .icon {
-    background: no-repeat url("./logos/socials-github-black.png") center;
+    background: no-repeat url("./logos/socials-github-white.png") center;
 }
 /* 
 .linkedin:hover {
@@ -291,8 +299,9 @@ h2 {
 */
 
 .skills_section {
-    background-color: #0E0E14;
+    background-color: var(--very-dark-blue);
     color: white;
+    padding: 4rem 0px;
 }
 
 .skills_section h2 {
@@ -339,7 +348,7 @@ h2 {
 .project-preview {
     width: 300px;
     height: 200px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 1px 1px 4px lightgrey;
 }
 
@@ -386,7 +395,7 @@ h2 {
 */
 
 footer {
-    background-color: var(--dark-blue);
+    background-color: var(--very-dark-blue);
     min-height: 3rem;
     width: 100vw;
     color: lightgrey;
@@ -401,15 +410,18 @@ footer {
 ***************************************
 */
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width:768px) and (max-width: 1000px) {
     .nav-bar {
         display: none;
     }
 
     .hero_section {
-        flex-direction: column;
-        justify-content: normal;
-        margin-top: 6rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        max-height: 30vh;
     }
 
     .sticky-bar {
@@ -419,7 +431,7 @@ footer {
     .skills_container,
     .about_section,
     .projects_section {
-        margin: 10% !important;
+        margin: 10%;
     }
 
     .skills_container {
@@ -430,9 +442,63 @@ footer {
         max-width: 50px;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 0 1rem;
+        max-width: 100vw;
+    }
+
+    .sticky-bar {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .hero_section {
+        flex-direction: column;
+        justify-content: normal;
+        margin: auto !important;
+        padding-top: 100px;
+        gap: 2rem;
+    }
+
+    .hero_section img {
+        max-height: 50vh;
+    }
+
+    .hero_section .intro .btn {
+        width: 70%;
+    }
+/* 
+    .hero_section {
+        text-align: center;
+    } */
+
+    .hero_section p:first-child {
+        text-align: start;
+    }
+
+    section[class$='_section']:not(.skills_section){
+        margin: 8%;
+    }
+
+    .skills_container {
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        margin: 4rem 10%;
+    }
+
+    .skills_section h2 {
+        margin-left: 10%;
+    }
+
+
     .project {
         display: flex;
         flex-direction: column;
+        align-items: start;
     }
-
 }
