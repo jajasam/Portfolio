@@ -29,6 +29,12 @@ const projects = [
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
                 "preview": "./projects-preview/Portfolio.jpeg"
+            },
+            {
+                "title": "Battleship game",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
+                "preview": "./projects-preview/Battleship.png",
+                "comingSoon": true
             }
         ],
     "en":
@@ -56,10 +62,16 @@ const projects = [
             },
             {
                 "title": "This portfolio",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. This portfolio is responsive and offers to languages, such as French and English.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
                 "preview": "./projects-preview/Portfolio.jpeg"
+            },
+            {
+                "title": "Battleship game",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
+                "preview": "./projects-preview/Battleship.png",
+                "comingSoon": true
             }
         ]
     }

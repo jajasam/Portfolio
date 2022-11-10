@@ -5,7 +5,7 @@ const projectsContainer = document.querySelector(".projects_container");
 const langBtn = document.querySelector(".lang-btn");
 
 
-let language = 'fr';
+let language = 'en';
 const projectsInCurrentLang = projects[0][language];
 
 const skills = ["HTML","CSS", "JavaScript", "React", "Bootstrap", "VSC", "Git", "Figma"];
