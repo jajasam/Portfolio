@@ -33,6 +33,7 @@ body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.25rem;
+    letter-spacing: 0.8px;
 }
 
 main {
@@ -65,13 +66,6 @@ section {
     margin-bottom: 10rem;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    margin-bottom: 10rem;
-}
-
 h2 {
     font-size: 1.75rem;
 }
@@ -82,11 +76,16 @@ h2 {
 ***************************************
 */
 header {
+    background: white !important;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+header > div.container {
     display: flex;
     justify-content: space-between;
-    background: #FFF !important;
-    width: 100%;
-    /* box-shadow: 0 4px 2px -2px gray; */
 }
 
 .logo {
@@ -346,6 +345,7 @@ h1 {
 .projects_container {
     margin: 0 10%;
     padding: 0 2rem;
+    padding-bottom: 10rem;
 }
 
 .project {
@@ -416,31 +416,32 @@ h1 {
 
 footer {
     background-color: black;
-    min-height: 12rem;
+    height: 100vh;
     color: grey;
     position: sticky;
     bottom: 0;
-    z-index: -1;
+    /* z-index: -1; */
+    display: flex;
 }
 
 footer .container {
-    /* background-color: black; */
-    background-color: var(--very-dark-blue);
     display:flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 4rem 0 0 8rem;
     borde-radius: 10px;
+    max-width: 1200px;
 }
 
 footer .contact {
     display: flex;
     flex-direction:column;
-    max-width: 220px;
+    font-size: 3rem;
 }
 
 footer .contact p {
     margin: 0.25rem 0 ;
+    font-family: 'syncopate', sans-serif;
+    font-weight: 700;
 }
 
 footer .contact .email {
@@ -455,15 +456,17 @@ footer .contact .email::after {
   display: flex;
   flex-direction: column;
   background-color: white;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 footer .contact .email:hover::after {
-    width: 100%;
+    width: 80%;
 }
 
 footer small {
-    max-width: 250px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
 }
 
 /* 
