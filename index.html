@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
     <title>Jana Samson's portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <div class="logo">JS</div>
         <div class="nav-bar">
             <div>
@@ -24,9 +24,6 @@
                         <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
                         <button class="lang-btn">FR</button>
                     </li>
                 </ul>
@@ -35,64 +32,57 @@
     </header>
     <main>
         <section class="hero_section">
-            <div class="intro">
-                <p>HELLO, I'M</p>
-                <h1>Jana Samson</h1>
-                <p>Front-end web developer</p>
-                <button class="btn contact-btn">Contact me</button>
-            </div>
-            <div>
-                <img src="./me.jpeg" alt="">
+            <div class="hero container">
+                <div class="intro">
+                    <p>HELLO, I'M</p>
+                    <h1>Jana Samson</h1>
+                    <p>junior front-end web developer</p>
+                    <button class="btn contact-btn">Contact me</button>
+                </div>
+                <div>
+                    <img src="./me.jpeg" alt="">
+                </div>
             </div>
             <div class="sticky-bar">
                 <ul>
-                    <li class="github">    
+                    <li class="linkedin">    
                         <a target="_blank" href="https://github.com/jajasam">
                             <div class="icon"></div>
                         </a>
                     </li>
-                    <li class="linkedin">
+                    <li class="github">
                         <a target="_blank" href="https://www.linkedin.com/in/jana-samson/">
                             <div class="icon"></div>
                         </a>
                     </li>
-                    <li class="linkedin">
-                        <a target="_blank" href="https://www.linkedin.com/in/jana-samson/">
+                    <li class="mail">
+                        <a target="_blank" href="mailto:jana.samson@hotmail.fr">
                             <div class="icon"></div>
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="about" class="about_section">
-            <h2>About</h2>
+        <section id="about" class="about_section container">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. Aliquam, aut animi perspiciatis, deleniti recusandae delectus libero, reiciendis excepturi et laboriosam aspernatur veniam natus praesentium cumque nam dolorem sunt accusantium voluptates quis maiores ut? Fuga, minus. Perspiciatis magni unde id quos nemo laborum. Self-taught web developer from Montreal. </p>
         </section>
-        <section id="skills" class="skills_section">
-            <div>
-                <h2>Skills</h2>
-                <div class="skills_container"></div>
+        <section class="skills_section">
+            <div class="skills_container container"></div>
+        </section>
+        <section id="projects" class="projects_section container">
+            <div class="projects_container">
+                <h2>Selected projects</h2>
             </div>
-        </section>
-        <section id="projects" class="projects_section">
-            <h2>Selected projects</h2>
-            <div class="projects_container"></div>
-        </section>
-        <section id="contact" class="contact_section">
-            <h2>Let's get in touch</h2>
-            <form action="">
-                <label for="">
-                    Name
-                    <input type="text">
-                </label>
-                <label for="">Message
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </label>
-            </form>
         </section>
     </main>
     <footer>
-        <small>2022 - Created by Jana Samson</small>
+        <div class="container">
+            <div class="contact">
+                <p>Let's get in touch</p>
+                <a href="mailto:jana.samson@hotmail.fr" class="email">jana.samson@hotmail.fr</a>
+            </div>
+            <small>2022 - Created by Jana Samson</small>
+        </div>
     </footer>
 </body>
 </html>
