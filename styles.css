@@ -33,7 +33,13 @@ body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.25rem;
-    background: rbg(232, 223, 216);
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+    background-color: white;
 }
 
 a {
@@ -412,6 +418,9 @@ footer {
     background-color: black;
     min-height: 12rem;
     color: grey;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
 }
 
 footer .container {
