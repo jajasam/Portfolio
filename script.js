@@ -8,7 +8,7 @@ const langBtn = document.querySelector(".lang-btn");
 let language = 'en';
 const projectsInCurrentLang = projects[0][language];
 
-const skills = ["HTML","CSS", "JavaScript", "React", "Bootstrap", "VSC", "Git", "Figma"];
+const skills = ["HTML","CSS", "JavaScript", "React", "Bootstrap", "VSC", "Git", "GitHub"];
 
 function displaySkills () {
     let markup = "";

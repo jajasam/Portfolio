@@ -21,7 +21,7 @@ const projects = [
                 "description": "API",
                 "linkToDemo": "",
                 "linkToCode": "",
-                "preview": ""
+                "preview": "./projects-preview/W.png"
             },
             {
                 "title": "This portfolio",
@@ -58,7 +58,7 @@ const projects = [
                 "description": "API",
                 "linkToDemo": "",
                 "linkToCode": "",
-                "preview": ""
+                "preview": "./projects-preview/W.png"
             },
             {
                 "title": "This portfolio",
