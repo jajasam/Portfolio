@@ -53,6 +53,10 @@ section {
 
 h2 {
     font-size: 1.75rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 13%;
+    padding-bottom: 2%;
 }
 
 /* 
@@ -298,7 +302,6 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 150px 50px;
     list-style: none;
-    padding: 0 10%;
 }
 
 .skill {
@@ -392,7 +395,6 @@ h1 {
 }
 
 .project_btns .btn:hover {
-    letter-spacing: 3px;
     font-weight: bold;
     box-shadow: 1px 2px 4px lightgrey;
 }
