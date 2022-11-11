@@ -4,6 +4,10 @@ const skillsContainer = document.querySelector(".skills_container");
 const projectsContainer = document.querySelector(".projects_container");
 const langBtn = document.querySelector(".lang-btn");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
+const hamburgerMenuClose = document.querySelector(".hamburger-menu-close");
+const menuModal = document.querySelector(".menu-modal");
+const body = document.querySelector("body");
+
 
 
 let language = 'en';
@@ -63,5 +67,11 @@ function setLanguage() {
 
 langBtn.addEventListener("click", setLanguage)
 hamburgerMenu.addEventListener("click", () => {
-    hamburgerMenu.classList.toggle("close")
+    menuModal.classList.remove("hidden");
+    body.style.overflow = "hidden";
+})
+
+hamburgerMenuClose.addEventListener("click", () => {
+    menuModal.classList.add("hidden");
+    body.style.overflow = "scroll";
 })

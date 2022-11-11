@@ -1,6 +1,6 @@
 .hamburger-menu {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,33 +12,111 @@
 }
 
 .hamburger-menu div {
-    height: 12px;
+    height: 11px;
     width: 100%;
     background-color: var(--dark-blue);
     border-radius: 2px;
     transition: transform 0.2s ease;
 }
 
-.hamburger-menu.close {
-    display: hidden;
+.hamburger-menu-close {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    z-index: 600;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
 }
 
-.hamburger-menu.close div:first-child {
-    transform: rotate(45deg);
-    transform-origin: -7px;
+.hamburger-menu-close::before,
+.hamburger-menu-close::after  {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: white;
 }
 
-.hamburger-menu.close div:nth-child(2) {
-    display: none;
-}
-
-.hamburger-menu.close div:last-child {
+.hamburger-menu-close::before {
     transform: rotate(-45deg);
-    transform-origin: 0;
+}
+
+.hamburger-menu-close::after {
+    transform: rotate(45deg);
+}
+
+.menu-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 300;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+    text-align: center;
+    gap: 2rem;
+}
+
+.menu-modal ul {
+    list-style-type: none;
+}
+
+.menu-modal .socials li {
+    background: #b5a5a1;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.menu-modal ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'syncopate', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    transition: font-size 0.2s ease;
+}
+
+.menu-modal ul li a:focus,
+.menu-modal ul li a:active {
+    font-size: 2.5rem;
+}
+
+.menu-modal .nav-links {
+    padding-left: 0;
+}
+
+.menu-modal .socials {
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+}
+
+.menu-modal .lang-btn {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-family: 'syncopate', sans-serif;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-modal .hamburger-menu-close {
+    position: absolute;
 }
 
 @media screen and (max-width:768px) {
     .hamburger-menu {
         display: flex;
+    }
+    .menu-modal .socials {
+        gap: 1rem;
     }
 }

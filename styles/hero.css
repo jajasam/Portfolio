@@ -12,6 +12,10 @@
     padding: 4rem 4rem 6rem 4rem;
 }
 
+.hero_section {
+    margin-bottom: 8rem;
+}
+
 .hero_section img {
     max-width: 100%;
     width: 600px;
@@ -76,7 +80,6 @@ h1 {
 } 
 
 @media screen and (max-width: 768px) {
-
     .hero {
         flex-direction: column;
         justify-content: normal;
@@ -84,13 +87,45 @@ h1 {
         padding-top: 100px;
         gap: 2rem;
         height: auto;
+        padding: 8rem 1rem 5rem 1rem;
     }
 
-    .hero_section .intro .btn {
-        width: 500px;
+    .hero_section .intro {
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+
+    .hero_section .intro h1 {
+        font-size: 5rem;
+    }
+
+    .hero_section .intro .contact-btn {
+        font-size: 1.5rem;
+        width: 300px !important;
+        height: 75px;
     }
 
     .hero_section p:first-child {
         text-align: start;
+    }
+
+    .hero_section img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .hero_section .intro h1 {
+        font-size: 3rem;
+    }
+
+    .hero_section .intro {
+        font-size: 1rem;
+    }
+
+    .hero_section .intro .contact-btn {
+        font-size: 1rem;
+        width: 250px !important;
+        height: 50px;
     }
 }

@@ -14,18 +14,21 @@ footer .container {
     gap: 4rem;
     borde-radius: 10px;
     max-width: 1200px;
+    width: 100%;
 }
 
 footer .contact {
     display: flex;
     flex-direction:column;
     font-size: 3rem;
+    margin: auto;
 }
 
 footer .contact p {
     margin: 0.25rem 0 ;
     font-family: 'syncopate', sans-serif;
     font-weight: 700;
+    color: #b5a5a1;
 }
 
 footer .contact .email {
@@ -55,13 +58,18 @@ footer small {
     right: 2px;
 }
 
+@media screen and (max-width: 768px) {
+    footer .contact {
+        font-size: 2rem;
+    }
+}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 550px) {
     footer {
         height: 50vh;
     }
 
     footer .contact {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }

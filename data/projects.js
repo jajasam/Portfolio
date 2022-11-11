@@ -42,15 +42,15 @@ const projects = [
             {
                 "title": "E-commerce",
                 "description": "Ecommerce app for audio systems built with React.",
-                "linkToDemo": "https://aesthetic-centaur-7df753.netlify.app/",
-                "linkToCode": "https://github.com/jajasam/Ecommerce-app",
+                "linkToDemo": "",
+                "linkToCode": "",
                 "preview": "./projects-preview/Ecomm.png"
             },
             {
                 "title": "To do list",
                 "description": "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive, offers two modes (light and dark) and contains a drag and drop functionnality to reorder the todos.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
-                "linkToCode": "https://github.com/jajasam/To-do-app",
+                "linkToCode": "",
                 "preview": "./projects-preview/Todo.png"
             },
             {
