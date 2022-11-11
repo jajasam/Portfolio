@@ -1,0 +1,121 @@
+.projects_container {
+    padding: 0 5%;
+    padding-bottom: 10rem;
+}
+
+.project {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    align-items: center;
+    height: 300px;
+}
+
+.project-preview {
+    width: 400px;
+    height: 90%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px lightgrey;
+}
+
+.project:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.project-infos {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.project-infos h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    flex-basis: 25%;
+}
+
+.project-infos p {
+    opacity: 0.7;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    flex-basis: 50%;
+}
+
+.project_btns {
+    flex-basis: 25%;
+    display: flex;
+    gap: 1rem;
+}
+
+.project_btns .btn {
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    width: 60px;
+    max-width: 60px;
+    transition: all 0.1s ease;
+}
+
+.project_btns .btn:hover {
+    font-weight: bold;
+    box-shadow: 1px 2px 4px lightgrey;
+}
+
+.demo_btn {
+    background-color: #0d0953;
+    color: white;
+    display: block;
+}
+
+.code_btn {
+    border: 1px solid #0d0953;
+    color: #0d0953;
+    display: block;
+}
+
+.coming-soon {
+    background-color: #eeeeee;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+}
+
+.coming-soon .ribbon {
+    width: 260px;
+    height: 35px;
+    background-color: white;
+    position: absolute;
+    color: black;
+    text-align: center;
+    right: 0;
+    top: -7px;
+    transform: translateX(35%) translateY(0) rotate(45deg);
+    transform-origin: top left;
+    z-index: 10;
+}
+
+@media screen and (max-width:768px) {
+    .projects_container {
+        margin: 0;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        padding: 2.5rem 0 2.5rem 0;
+        margin: 0 5%;
+        height: auto;
+    }
+
+    .project-preview {
+        margin: auto;
+        width: 100%;
+        height:300px;
+    }
+}

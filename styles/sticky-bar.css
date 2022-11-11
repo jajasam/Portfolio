@@ -1,0 +1,47 @@
+.sticky-bar {
+    position: fixed;
+    top: 12rem;
+    left: 0;
+    z-index: 100;
+}
+
+.sticky-bar ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.7rem;
+    list-style: none;
+}
+
+.sticky-bar ul li {
+    text-align: center;
+    background: #b5a5a1;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.github .icon {
+    background: no-repeat url("../logos/sticky-bar/github-white.png") center;
+}
+
+.linkedin .icon {
+    background: no-repeat url("../logos/sticky-bar/linkedin-white.png") center;
+}
+
+.mail .icon {
+    background: no-repeat url("../logos/sticky-bar/mail.png") center;
+}
+
+@media screen and (max-width: 767px) {
+    .sticky-bar {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+header {
+    background: white !important;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 0 2rem;
+}
+
+header > div.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 4.5rem;
+    color: black;
+    font-family: 'Fascinate', cursive;
+    margin-top: 0.5rem;
+    color: var(--dark-blue);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.nav-bar li {
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.nav-bar li:hover {
+    text-shadow: 1px 0 0 black;
+}
+
+.nav-bar li a::after {
+  width: 0%;
+  content: '';
+  height: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-blue);
+  transition: all 0.2s ease;
+}
+
+.nav-bar li a:hover::after {
+    width: 100%;
+}
+
+.lang-btn {
+    color: white;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.lang-btn:hover {
+    text-shadow: 1px 0 0 white;
+}
+
+
+@media screen and (max-width:768px) {
+    .nav-bar {
+        display: none;
+    }
+}

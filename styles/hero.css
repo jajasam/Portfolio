@@ -1,0 +1,96 @@
+@keyframes revealTextUp {
+    to {
+      transform: translateY(0%);
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 4rem 6rem 4rem;
+}
+
+.hero_section img {
+    max-width: 100%;
+    width: 600px;
+}
+
+.hero_section .intro {
+    padding-left: 2rem;
+}
+
+.hero_section .intro p {
+    opacity: 0.8;
+    color: grey;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top:0;
+    font-size: 1.3em;
+}
+
+.hero_section .intro p:first-child::after {
+    content: '';
+    height: 5px;
+    width: 2.5rem;
+    background-color: var(--dark-blue);
+    display: flex;
+}
+
+.contact-btn {
+    background: none;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    letter-spacing: 1.5px;
+    transition: all 0.4s ease;
+}
+
+.contact-btn:hover {
+    background: black;
+    letter-spacing: 2.5px;
+    box-shadow: 1px 2px 4px lightgrey;
+}
+
+.contact-btn:hover a {
+    color: white;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    color: black;
+    font-family: 'Lora', serif;
+    margin: 0;
+    transform: translateY(100%);
+    animation: revealTextUp 0.8s forwards;
+} 
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: normal;
+        margin: auto;
+        padding-top: 100px;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .hero_section .intro .btn {
+        width: 500px;
+    }
+
+    .hero_section p:first-child {
+        text-align: start;
+    }
+}
