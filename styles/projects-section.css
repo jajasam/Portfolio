@@ -62,6 +62,10 @@
     box-shadow: 1px 2px 4px lightgrey;
 }
 
+.project_btns .btn {
+    text-align: center;
+}
+
 .demo_btn {
     background-color: #0d0953;
     color: white;
@@ -69,7 +73,7 @@
 }
 
 .code_btn {
-    border: 1px solid #0d0953;
+    border: 2px solid #0d0953;
     color: #0d0953;
     display: block;
 }
