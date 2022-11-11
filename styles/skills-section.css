@@ -21,6 +21,10 @@
     letter-spacing: 1.5px;
 }
 
+.skill img {
+    height:100px;
+}
+
 .skill:hover {
     transform: scale(1.2);
 }
@@ -47,11 +51,20 @@
     }
 }
 
-@media screen and (max-width: 550px) {  
+@media screen and (max-width: 550px) { 
+    .skills_section {
+        margin: 5rem auto;
+    } 
+
     .skills_container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 100px);
-        gap: 125px 50px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 50px);
+        gap: 100px 10px;
         margin: 0 5%;
+        padding-top: 2rem;
+    }
+
+    .skill img {
+        height: 75px;
     }
 }

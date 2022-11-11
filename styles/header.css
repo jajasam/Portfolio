@@ -12,11 +12,10 @@ header > div.container {
 }
 
 .logo {
-    font-size: 4.5rem;
-    color: black;
-    font-family: 'Fascinate', cursive;
-    margin-top: 0.5rem;
-    color: var(--dark-blue);
+    width: 100px;
+    height: 60px;
+    margin-top: 1.5rem;
+    background: url("../logo.png") no-repeat center/cover;
 }
 
 .nav-bar {
@@ -79,5 +78,8 @@ header > div.container {
     }
     header {
         padding: 0 1rem;
+    }
+    .logo {
+        height: 100px;
     }
 }
