@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:900');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 @keyframes revealTextUp {
     to {
@@ -52,11 +54,16 @@ section {
 }
 
 h2 {
-    font-size: 1.75rem;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 13%;
-    padding-bottom: 2%;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+section h2:first-child::after {
+    content: '';
+    height: 0.3rem;
+    width: 2.5rem;
+    background-color: var(--dark-blue);
+    display: flex;
 }
 
 /* 
@@ -70,6 +77,7 @@ header {
     position: relative;
     z-index: 1;
     background-color: white;
+    padding: 0 2rem;
 }
 
 header > div.container {
@@ -78,7 +86,7 @@ header > div.container {
 }
 
 .logo {
-    font-size: 4rem;
+    font-size: 5rem;
     color: black;
     font-family: 'Fascinate', cursive;
     margin-top: 0.5rem;
@@ -143,12 +151,13 @@ header > div.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
     padding: 5rem 4rem 6rem 4rem;
 }
 
 .hero_section img {
-    max-height: 500px;
+    max-width: 100%;
+    width: 600px;
 }
 
 .hero_section .intro {
@@ -170,7 +179,6 @@ header > div.container {
     width: 2.5rem;
     background-color: var(--dark-blue);
     display: flex;
-    transition: 
 }
 
 .contact-btn {
@@ -207,6 +215,50 @@ h1 {
     transform: translateY(100%);
     animation: revealTextUp 0.8s forwards;
 } 
+
+/* 
+***************************************
+        HAMBURGER MENU
+***************************************
+*/
+.hamburger-menu {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 2rem;
+    position: absolute;
+    right: 2rem;
+    display: none;
+}
+
+.hamburger-menu div {
+    height: 12px;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-radius: 2px;
+    transition: transform 0.2s ease;
+}
+
+.hamburger-menu.close {
+    display: hidden;
+}
+
+.hamburger-menu.close div:first-child {
+    transform: rotate(45deg);
+    transform-origin: -7px;
+}
+
+.hamburger-menu.close div:nth-child(2) {
+    display: none;
+}
+
+.hamburger-menu.close div:last-child {
+    transform: rotate(-45deg);
+    transform-origin: 0;
+}
 
 /* 
 ***************************************
@@ -300,7 +352,8 @@ h1 {
 .skills_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 150px 50px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 50px 50px;
     list-style: none;
 }
 
@@ -320,7 +373,7 @@ h1 {
 }
 
 .skill h4 {
-    margin: 25px auto;
+    margin: 10px auto;
     display: none;
 }
 
@@ -527,14 +580,15 @@ footer small {
     .skill {
         height:100px;
     }
+    
+    .hamburger-menu {
+        display: flex;
+
+    }
 }
 
 @media screen and (max-width: 767px) {
     .sticky-bar {
-        display: none;
-    }
-
-    .nav-bar {
         display: none;
     }
 

@@ -3,6 +3,7 @@ import { projects } from './data/projects.js'
 const skillsContainer = document.querySelector(".skills_container");
 const projectsContainer = document.querySelector(".projects_container");
 const langBtn = document.querySelector(".lang-btn");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 
 
 let language = 'en';
@@ -61,3 +62,6 @@ function setLanguage() {
 }
 
 langBtn.addEventListener("click", setLanguage)
+hamburgerMenu.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("close")
+})
