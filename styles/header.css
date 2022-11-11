@@ -4,6 +4,7 @@ header {
     z-index: 1;
     background-color: white;
     padding: 0 2rem;
+    box-shadow: 1px 2px 4px lightgrey;
 }
 
 header > div.container {
