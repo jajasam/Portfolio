@@ -56,6 +56,23 @@
     gap: 0.5rem;
 }
 
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.github .icon {
+    background: no-repeat url("../logos/sticky-bar/github-white.png") center;
+}
+
+.linkedin .icon {
+    background: no-repeat url("../logos/sticky-bar/linkedin-white.png") center;
+}
+
+.mail .icon {
+    background: no-repeat url("../logos/sticky-bar/mail.png") center;
+}
+
 .contact-btn {
     background: none;
     font-size: 1rem;
