@@ -104,4 +104,8 @@ section h2 {
     section h2 { 
         padding-left: 0.5rem;
     }
+
+    body {
+        margin: 0 0;
+    }
 }
