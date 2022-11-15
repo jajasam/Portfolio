@@ -10,9 +10,7 @@
 </head>
 <body>
     <div class="menu-modal hidden">
-        <div class="hamburger-menu-close">
-
-        </div>
+        <div class="hamburger-menu-close"></div>
         <button class="lang-btn">FR</button>
         <ul class="nav-links">
             <li>
@@ -45,16 +43,15 @@
     </div>
     <header>
         <div class="container">
-            <div class="logo"></div>
+            <div class="logo">JS</div>
             <div class="hamburger-menu">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <div class="nav-bar">
-                <div>
                     <ul>
-                        <li class="current">
+                        <li>
                             <a href="#about">About</a>
                         </li>
                         <li>
@@ -67,44 +64,41 @@
                             <button class="lang-btn btn">FR</button>
                         </li>
                     </ul>
+                </div>
             </div>
-        </div>
     </header>
     <main>
         <section class="hero_section">
+            <div class="overlay"></div>
             <div class="hero container">
+                <img src="./m.jpeg" alt="">
                 <div class="intro">
-                    <p>Hello I'm</p>
+                    <!-- <p>Hello I'm</p> -->
                     <div class="wrapper">
-                        <h1>Jana Samson</h1>
+                        <h1>Hello I'm, <span>Jana Samson</span></h1>
                     </div>
                     <p>front-end web developer</p>
-                    <button class="contact-btn">
-                        <a href="mailto:jana.samson@hotmail.fr" class="email">Contact me</a>
-                    </button>
+                        <a href="mailto:jana.samson@hotmail.fr" class="contact-btn">
+                            <span>Contact me</span>
+                        </a>
+                        <ul>
+                            <li class="linkedin"> 
+                                <a target="_blank" href="https://www.linkedin.com/in/jana-samson/">
+                                    <div class="icon"></div>
+                                </a>
+                            </li>
+                            <li class="github">
+                                <a target="_blank" href="https://github.com/jajasam">
+                                    <div class="icon"></div>
+                                </a>
+                            </li>
+                            <li class="mail">
+                                <a target="_blank" href="mailto:jana.samson@hotmail.fr">
+                                    <div class="icon"></div>
+                                </a>
+                            </li>
+                        </ul>
                 </div>
-                <div>
-                    <img src="./me.jpeg" alt="">
-                </div>
-            </div>
-            <div class="sticky-bar">
-                <ul>
-                    <li class="linkedin"> 
-                        <a target="_blank" href="https://www.linkedin.com/in/jana-samson/">
-                            <div class="icon"></div>
-                        </a>
-                    </li>
-                    <li class="github">
-                        <a target="_blank" href="https://github.com/jajasam">
-                            <div class="icon"></div>
-                        </a>
-                    </li>
-                    <li class="mail">
-                        <a target="_blank" href="mailto:jana.samson@hotmail.fr">
-                            <div class="icon"></div>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </section>
         <section id="about" class="about_section container">

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
+/* logo */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
 /* backup for h1 */
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
@@ -15,17 +18,17 @@
 @import './styles/projects-section.css';
 @import './styles/footer.css';
 
-
+/* 
 html {
     scroll-behavior: smooth;
-}
+} */
 
 :root {
     --dark-blue: #0d0953;
     --very-dark-blue: #040437;
     --dark-green: #4F5309;
     --light: #ece5e4;
-    --orange: #ECE5E4;
+    --orange: #ff9464;
 }
 
 ::selection {
@@ -35,14 +38,14 @@ html {
 
 .container {
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
 }
 
 body {
-    margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.25rem;
-    letter-spacing: 0.7px;
+    margin: 0 1.5rem;
+    background-color: black;
 }
 
 main {
@@ -54,7 +57,7 @@ main {
 
 a {
     text-decoration: none;
-    color: black;
+    cursor: pointer;
 }
 
 h2 {
@@ -66,15 +69,28 @@ section h2 {
     max-width: 1200px;
     margin: auto;
     margin-bottom: 2rem;
+    padding-left: 4rem;
+    font-size: 2rem;
+    /* text-transform: uppercase; */
 }
-
-section h2:first-child::after {
+/* 
+#about::after,
+#skills::after {
     content: '';
-    height: 5px;
-    width: 2.5rem;
-    background-color: var(--dark-blue);
+    height: 4px;
+    width: 10rem;
+    background-color: black;
     display: flex;
-}
+    margin: 5rem 0 0 45%;
+} */
+
+/* section h2:first-child::after {
+    content: '';
+    height: 6px;
+    width: 3rem;
+    background-color: #e2e116;
+    display: flex;
+} */
 
 .btn {
     cursor: pointer;

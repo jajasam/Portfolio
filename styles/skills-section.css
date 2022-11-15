@@ -1,12 +1,15 @@
 .skills_section {
-    margin: 16rem auto;
+    margin: 8rem auto;
+    padding-top: 4rem;
+
+    /* background-color: black; */
 }
 
 .skills_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 200px);
-    gap: 50px 50px;
+    /* gap: 50px 0; */
     list-style: none;
 }
 
