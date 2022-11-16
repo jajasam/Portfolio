@@ -63,13 +63,13 @@ a {
 h2 {
     font-size: 1.5em;
     font-weight: normal;
+    text-align: center;
 }
 
 section h2 {
     max-width: 1200px;
     margin: auto;
     margin-bottom: 2rem;
-    padding-left: 4rem;
     font-size: 2rem;
     /* text-transform: uppercase; */
 }
@@ -84,13 +84,19 @@ section h2 {
     margin: 5rem 0 0 45%;
 } */
 
-/* section h2:first-child::after {
+section h2:first-child::after {
     content: '';
-    height: 6px;
+    height: 4px;
     width: 3rem;
-    background-color: #e2e116;
+    background-color: black;
     display: flex;
-} */
+    margin: auto;
+    margin-top: 2px;
+}
+
+section#skills h2:first-child::after {
+    background-color: white;
+}
 
 .btn {
     cursor: pointer;
