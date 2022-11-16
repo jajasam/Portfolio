@@ -3,7 +3,6 @@ header {
     padding: 0 2rem;
     height: 60px;
     z-index: 200;
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1);
 }
 
 header > div.container {
@@ -16,7 +15,6 @@ header > div.container {
 .logo {
     font-family: 'Fascinate', cursive;
     color: white;
-    /* color: #DB0C0C; */
     font-size: 2.3rem;
     /* background: url("../logo.png") no-repeat center/cover; */
 }
@@ -49,7 +47,7 @@ header > div.container {
 }
 
 .lang-btn {
-    background: var(--yellow);
+    background: white;
     border: none;
     font-size: 1rem;
     cursor: pointer;

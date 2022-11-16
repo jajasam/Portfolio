@@ -20,10 +20,10 @@
 @import './styles/projects-section.css';
 @import './styles/footer.css';
 
-/* 
+
 html {
     scroll-behavior: smooth;
-} */
+}
 
 @font-face {
     font-family: 'Mak';
@@ -35,9 +35,10 @@ html {
     --dark-blue: #040437;
     --dark-green: #4F5309;
     --light: #ece5e4;
-    --orange: #ff9464;
+    --orange: #FF8E00;
     --dark-orange: #FF7E45;
     --yellow: #FFB000;
+    --red: #BA0000;
 }
 
 ::selection {
@@ -58,9 +59,9 @@ body {
 }
 
 main {
-    /* position: relative;
+    position: relative;
     min-height: 100vh;
-    z-index: 1; */
+    z-index: 1;
     background-color: white;
     border-radius: 8px;
 }
@@ -79,10 +80,7 @@ h2 {
 }
 
 section h2 {
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    padding-left: 10%;
     font-family: 'Secular One', sans-serif;
     /* text-transform: uppercase; */
 }
@@ -106,10 +104,6 @@ section h2 {
     margin: auto;
     margin-top: 2px;
 } */
-
-section#skills h2:first-child::after {
-    background-color: white;
-}
 
 .btn {
     cursor: pointer;

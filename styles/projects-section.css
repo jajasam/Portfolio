@@ -1,19 +1,19 @@
 .projects_container {
     padding-bottom: 10rem;
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 .project {
     display: flex;
     gap: 3rem;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem 1rem 0;
     align-items: center;
     height: 300px;
 }
 
 .project-preview {
-    width: 400px;
-    height: 90%;
+    width: 325px;
+    height: 80%;
     border-radius: 6px;
     box-shadow: 1px 1px 4px lightgrey;
 }
@@ -23,7 +23,7 @@
 }
 
 .project-infos {
-    height: 80%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,6 @@
 }
 
 .demo_btn {
-    background-color: #0d0953;
     background-color: var(--dark-blue);
     color: white;
 }

@@ -1,7 +1,7 @@
 .hero_section {
     margin-bottom: 8rem;
     position: relative;
-    /* background: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") center/cover no-repeat; */
+    /* background: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80") center/cover no-repeat; */
     height: 100vh;
     min-height: 700px;
     max-height: 1000px;
