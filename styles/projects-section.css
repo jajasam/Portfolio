@@ -6,7 +6,6 @@
 .project {
     display: flex;
     gap: 3rem;
-    padding: 1rem 2rem 1rem 0;
     align-items: center;
     height: 300px;
 }
@@ -86,7 +85,6 @@
     color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     position: relative;
-    padding: 2rem;
 }
 
 .coming-soon img {
@@ -119,7 +117,7 @@
         flex-direction: column;
         align-items: start;
         gap: 1rem;
-        padding: 4rem 0;
+        padding: 2rem 0;
         margin: 0 5%;
         height: auto;
         width: 90%;
