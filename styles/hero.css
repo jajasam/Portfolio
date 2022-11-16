@@ -1,13 +1,14 @@
 .hero_section {
     margin-bottom: 8rem;
     position: relative;
-    background: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") center/cover no-repeat;
+    /* background: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") center/cover no-repeat; */
     height: 100vh;
     min-height: 700px;
     max-height: 1000px;
     display: flex;
-    align-items: center;
     background-attachment: fixed;
+    position: relative;
+    border-radius: 8px 8px 0 0;
 }
 
 .hero_section .overlay {
@@ -24,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
+    margin-top: 8rem;
 }
 
 .hero_section .content > div {
@@ -31,7 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 4rem;
-    margin-top: 8rem;
+    /* margin-top: 4rem; */
 }
 
 .hero_section .content img {
@@ -55,13 +57,18 @@
 
 .hero_section .content .socials {
     z-index: 20;
+    border-top: 1px solid white;
+    width: 200px;
+    position: absolute;
+    bottom: 8rem;
+    
 }
 
 .hero_section .content .socials ul {
     list-style: none;
     display: flex;
     gap: 0.5rem;
-    padding-left: 1rem;
+    width: 100%;
 }
 
 .socials .icon {
@@ -108,13 +115,14 @@ h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
     color: black;
-    /* font-family: 'Lora', 'Secular One', sans-serif; */
+    font-family: 'Secular One', sans-serif;
     margin: 0;
     text-transform: uppercase;
 } 
 
 h1 span {
     display: inline-block;
+    /* color: var(--orange); */
 }
 
 @media screen and (max-width: 768px) {

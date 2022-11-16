@@ -52,10 +52,13 @@
 
 .project_btns .btn {
     border-radius: 50px;
-    padding: 0.75rem 2rem;
-    width: 60px;
-    max-width: 60px;
+    height: 3rem;
+    width: 120px;
+    max-width: 120px;
     transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project_btns .btn:hover {
@@ -69,14 +72,13 @@
 
 .demo_btn {
     background-color: #0d0953;
+    background-color: var(--dark-blue);
     color: white;
-    display: block;
 }
 
 .code_btn {
-    border: 2px solid #0d0953;
-    color: #0d0953;
-    display: block;
+    border: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
 }
 
 .coming-soon {

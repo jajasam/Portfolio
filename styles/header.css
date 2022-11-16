@@ -16,6 +16,7 @@ header > div.container {
 .logo {
     font-family: 'Fascinate', cursive;
     color: white;
+    /* color: #DB0C0C; */
     font-size: 2.3rem;
     /* background: url("../logo.png") no-repeat center/cover; */
 }
@@ -33,14 +34,13 @@ header > div.container {
     justify-content: end;
     align-items: center;
     gap: 2rem;
-    font-size: 1.5rem;
 }
 
 .nav-bar li a {
     color: white;
     /* font-family: 'syncopate', sans-serif; */
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1.5px;
 }
 
@@ -49,7 +49,7 @@ header > div.container {
 }
 
 .lang-btn {
-    background: white;
+    background: var(--yellow);
     border: none;
     font-size: 1rem;
     cursor: pointer;
