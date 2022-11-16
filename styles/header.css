@@ -2,6 +2,8 @@ header {
     position: relative;
     padding: 0 2rem;
     height: 60px;
+    z-index: 200;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1);
 }
 
 header > div.container {
