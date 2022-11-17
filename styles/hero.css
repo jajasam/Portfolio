@@ -65,10 +65,8 @@
 .hero_section .content .socials ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-left: 0;
-    margin: 0;
+    justify-content: space-around;
+    padding: 1rem 1.5rem;
 }
 
 .socials .icon {
