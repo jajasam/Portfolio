@@ -74,17 +74,17 @@
 }
 
 .demo_btn {
-    background-color: var(--very-dark-kaki);
+    background-color: var(--light);
     color: white;
 }
 
 .code_btn {
-    border: 2px solid var(--very-dark-kaki);
-    color: var(--very-dark-kaki);
+    border: 2px solid var(--light);
+    color: var(--light);
 }
 
 .coming-soon {
-    background-color: #eeeeee;
+    background-color: var(--very-dark-kaki);
     border-radius: 8px;
     color: rgba(0, 0, 0, 0.5);
     overflow: hidden;

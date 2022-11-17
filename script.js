@@ -8,6 +8,7 @@ const hamburgerMenuClose = document.querySelector(".hamburger-menu-close");
 const menuModal = document.querySelector(".menu-modal");
 const body = document.querySelector("body");
 const navLinksMobile = document.querySelectorAll(".menu-modal .nav-links li");
+const downArrow = document.querySelector(".down-arrow");
 
 
 let language = 'en';
@@ -81,3 +82,7 @@ navLinksMobile.forEach(link => link.addEventListener("click", () => {
     menuModal.classList.add("hidden");
     body.style.overflow = "scroll";
 }))
+
+downArrow.addEventListener("click", () => {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+})

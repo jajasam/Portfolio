@@ -1,8 +1,7 @@
 header {
-    position: relative;
     padding: 0 2rem;
     height: 60px;
-    z-index: 200;
+    font-size: 1.25rem;
 }
 
 header > div.container {
@@ -14,25 +13,24 @@ header > div.container {
 
 .logo {
     font-family: 'Fascinate', cursive;
-    color: white;
     font-size: 2.3rem;
-    color: white;
+    color: var(--light);
+    /* color: white; */
     /* background: url("../logo.png") no-repeat center/cover; */
 }
 
 .nav-bar {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+    width: 400px;
 }
 
 .nav-bar ul {
     list-style: none;
     margin: 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    opacity: 0.8;
 }
 
 .nav-bar li a {
@@ -47,20 +45,41 @@ header > div.container {
     text-shadow: 1px 0 0 white;
 }
 
-.lang-btn {
-    background: white;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    color: black;
-    border-radius: 50%;
-    padding: 0.5rem;
-    color: white;
-    background-color: var(--very-dark-kaki);
+header .left {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: flex-end;
 }
 
-.lang-btn:hover {
-    text-shadow: 1px 0 0 black;
+div.lang-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.lang-btn:not(.current) {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.lang-btn:not(.current):hover {
+    text-shadow: 1px 0 0 white;
+}
+
+.lang-btn.current {
+    opacity: 1;
+    display: flex;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.lang-btn.current::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -70,5 +89,13 @@ header > div.container {
     }
     header {
         padding: 0 1rem;
+    }
+
+    header .socials {
+        display: none;
+    }
+
+    div.lang-btns {
+        display: none;
     }
 }

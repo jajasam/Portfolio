@@ -1,10 +1,11 @@
 footer {
     height: 250px;
-    color: grey;
-    position: sticky;
+    /* background: var(--light); */
+    color: white;
+    /* position: sticky;
     bottom: 0;
-    display: flex;
-    background: black;
+    display: flex; */
+    background-color: #181818;
 }
 
 footer .container {
@@ -27,7 +28,6 @@ footer .contact {
 
 footer .contact p {
     margin: 0.25rem 0 ;
-    color: var(--kaki);
     /* font-family: 'syncopate', sans-serif;
     font-weight: 700; */
     /* color: #b5a5a1; */
@@ -35,9 +35,9 @@ footer .contact p {
 }
 
 footer .contact .email {
-    color: white;
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
+    color: white;
     /* padding: 0.5rem; */
 }
 
@@ -57,6 +57,7 @@ footer .contact .email:hover::after {
 
 footer small {
     text-align: end;
+    color: rgba(225,225,225,0.4)
 }
 
 @media screen and (max-width: 768px) {
