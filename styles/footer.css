@@ -27,6 +27,7 @@ footer .contact {
 
 footer .contact p {
     margin: 0.25rem 0 ;
+    color: var(--kaki);
     /* font-family: 'syncopate', sans-serif;
     font-weight: 700; */
     /* color: #b5a5a1; */

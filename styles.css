@@ -11,6 +11,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 
+/* body 2 */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+
+
 @import './styles/header.css';
 @import './styles/hero.css';
 @import './styles/menu-mobile.css';
@@ -25,20 +30,19 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Mak';
     src: url('/mak/MAK.otf');
   }
 
 :root {
-    --blue: #0d0953;
-    --dark-blue: #040437;
-    --dark-green: #4F5309;
-    --light: #ece5e4;
-    --orange: #FF8E00;
-    --dark-orange: #FF7E45;
-    --yellow: #FFB000;
-    --red: #BA0000;
+    --kaki: #a5a880;
+    --dark-kaki: #707354;
+    --very-dark-kaki: #484a37;
 }
 
 ::selection {
@@ -71,29 +75,22 @@ a {
     cursor: pointer;
 }
 
-h2 {
-    font-size: 1.5em;
-    font-weight: normal;
-    /* text-align: center; */
-    font-family: 'Mak', sans-serif;
+section h2 {
+    padding-left: 0.5rem;
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Secular One', sans-serif;
     text-transform: uppercase;
 }
 
-section h2 {
-    padding-left: 10%;
-    font-family: 'Secular One', sans-serif;
-    /* text-transform: uppercase; */
-}
-/* 
-#about::after,
-#skills::after {
+
+section h2::after {
     content: '';
     height: 4px;
-    width: 10rem;
-    background-color: black;
+    width: 3rem;
+    background-color: var(--kaki);
     display: flex;
-    margin: 5rem 0 0 45%;
-} */
+}
 
 /* section h2:first-child::after {
     content: '';
@@ -118,10 +115,6 @@ section h2 {
 }
 
 @media screen and (max-width: 768px) {
-    section h2 { 
-        padding-left: 0.5rem;
-    }
-
     body {
         margin: 0 0;
     }
