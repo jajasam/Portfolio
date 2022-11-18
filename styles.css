@@ -38,14 +38,14 @@ html {
 }
 
 :root {
-  --light: #d5a795;
+  /* --light: #d5a795; */
   /* --light: #cf5138; */
 
 
-  --light: #ed774e;
-  /* --light: #e65022; */
-  /* --light: #DE7E5D; */
-  /* --light: #d4563d; */
+  /* --light: #ed774e; */
+  --light: #e65022;
+  --light: #DE7E5D;
+  --light: #d4563d;
   /* --kaki: #a5a880;
     --dark-kaki: #707354;
     --very-dark-kaki: #484a37; */
@@ -68,7 +68,7 @@ body {
   margin: 0;
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
-  background-color: #1f1f1f;
+  background-color: #1a1a1a;
 }
 
 main {

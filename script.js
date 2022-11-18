@@ -14,7 +14,7 @@ const downArrow = document.querySelector(".down-arrow");
 let language = 'en';
 const projectsInCurrentLang = projects[0][language];
 
-const skills = ["HTML","CSS", "JavaScript", "React", "Bootstrap", "VSC", "Git", "GitHub"];
+const skills = ["HTML","CSS", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma"];
 
 function displaySkills () {
     let markup = "";

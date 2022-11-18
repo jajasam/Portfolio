@@ -74,13 +74,13 @@
 }
 
 .demo_btn {
-    background-color: var(--light);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .code_btn {
-    border: 2px solid var(--light);
-    color: var(--light);
+    border: 2px solid white;
+    color: white;
 }
 
 .coming-soon {

@@ -6,9 +6,8 @@
 
 .skills_container {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(2, 200px);
-    /* gap: 50px 0; */
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(3, 150px);
     list-style: none;
     align-items: center;
     justify-content: center;
