@@ -79,7 +79,7 @@ hamburgerMenuClose.addEventListener("click", () => {
 })
 
 navLinksMobile.forEach(link => link.addEventListener("click", () => {
-    menuModal.classList.add("hidden");
+    menuModal.style.display = "none";
     body.style.overflow = "scroll";
 }))
 
@@ -102,7 +102,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     if(entry.isIntersecting) {
         //do something
-        console.log('interacting')
         entry.target.classList.remove("hidden");
         entry.target.classList.add("show");
     }})

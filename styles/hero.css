@@ -150,7 +150,8 @@ h1 span {
 
     .hero_section img {
         width: 200px !important;
-        /* border-radius: 50%; */
+        border-radius: 50%;
+        border: 5px solid var(--light);
     }
 
     .hero_section .content .socials {
@@ -180,7 +181,6 @@ h1 span {
     }
 
     .colored-shape {
-        left: -10px !important;
-        top: -10px !important;
+        display: none;
     }
 }
