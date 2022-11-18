@@ -50,9 +50,8 @@
 
 @media screen and (max-width:768px) {  
     .skills_container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 100px);
-        gap: 125px 50px;
     }
 
     .skills_section {
