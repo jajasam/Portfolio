@@ -14,11 +14,13 @@
 
 .skills_container {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 150px);
     list-style: none;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .skill {

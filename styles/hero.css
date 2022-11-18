@@ -71,7 +71,6 @@
 
 .contact-btn:hover {
     /* background-color: var(--very-dark-kaki); */
-    background-color: var(--light);
     color: white;
     border: none;
 }

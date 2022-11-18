@@ -28,6 +28,7 @@
     margin: 10% 0;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .project-infos h4 {
@@ -129,12 +130,17 @@
     }
 
     .project-preview {
+        width: 80%;
+        height: 70%;
         margin: auto;
-        width: 100%;
-        height: 75%;
     }
 
     .project-infos {
+        margin: auto;
+        text-align: center;
+    }
+
+    .project_btns {
         margin: auto;
     }
 }
