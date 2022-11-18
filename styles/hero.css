@@ -167,6 +167,16 @@ h1 span {
 
     .hero_section .socials {
         display: flex;
+        width: 80%;
+        border-top: 0.5px solid rgba(225,225,225,0.5);
+        margin: auto;
+    }
+
+    .hero_section .socials ul {
+        justify-content: center;
+        margin: auto;
+        gap: 1rem;
+        padding: 1rem 0 0 0;
     }
 
     .down-arrow {
