@@ -15,7 +15,7 @@ const cursor = document.querySelector(".cursor");
 let language = 'en';
 const projectsInCurrentLang = projects[0][language];
 
-const skills = ["HTML","CSS", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma"];
+const skills = ["HTML","CSS", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma", "Accessibility", "Responsive Design"];
 
 function displaySkills () {
     let markup = "";
@@ -104,10 +104,11 @@ const observer = new IntersectionObserver((entries) => {
         //do something
         entry.target.classList.remove("hidden");
         entry.target.classList.add("show");
-    }})
-},{
+    } else {
+        //if vw is before elem
+}}),{
     threshold: '0.1'
-});
+}});
 
 document.querySelectorAll('.hidden').forEach((i) => {
     if (i) {

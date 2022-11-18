@@ -2,7 +2,7 @@
     margin-bottom: 8rem;
     position: relative;
     height: 100vh;
-    min-height: 500px;
+    min-height: 700px;
     max-height: 1000px;
     display: flex;
     background-attachment: fixed;
@@ -40,6 +40,7 @@
 
 .hero_section .intro-img img {
     width: 300px;
+    border-radius: 0 0 50px 0;
 }
 
 .hero_section .content .intro-text {
@@ -127,7 +128,7 @@ h1 span {
 
     .hero_section .content {
         gap: 0;
-        margin: 4rem auto 0 auto !important;
+        margin: 4rem auto !important;
         justify-content: normal;
     }
 
@@ -150,8 +151,8 @@ h1 span {
 
     .hero_section img {
         width: 200px !important;
-        border-radius: 50%;
-        border: 5px solid var(--light);
+        border-radius: 50% !important;
+        border: 3px solid var(--light);
     }
 
     .hero_section .content .socials {
