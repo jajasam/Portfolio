@@ -45,6 +45,9 @@ html {
   /* --light: #e65022; */
   /* --light: #DE7E5D; */
   --light: #d4563d;
+  --dark: #242424;
+  --very-dark: #1d1d1d;
+
   /* --kaki: #a5a880;
     --dark-kaki: #707354;
     --very-dark-kaki: #484a37; */
@@ -68,6 +71,7 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.87);
   background-color: #1a1a1a;
+  background-color: var(--very-dark);
 }
 
 main {
