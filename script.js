@@ -37,7 +37,7 @@ function displayProjects () {
         const {title, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
 
         markup +=  `
-        <div class="project ${comingSoon ? "coming-soon" : ""}">
+        <div class="project ${comingSoon ? "coming-soon" : ""} hidden">
             <img src="${preview}" class="project-preview" />
             ${
                 comingSoon ?
@@ -69,12 +69,12 @@ function setLanguage() {
 
 langBtn.addEventListener("click", setLanguage)
 hamburgerMenu.addEventListener("click", () => {
-    menuModal.classList.remove("hidden");
+    menuModal.style.display = "block";
     body.style.overflow = "hidden";
 })
 
 hamburgerMenuClose.addEventListener("click", () => {
-    menuModal.classList.add("hidden");
+    menuModal.style.display = "none";
     body.style.overflow = "scroll";
 })
 
@@ -96,3 +96,22 @@ window.addEventListener("mousemove", (e) => {
     cursor.style.top = `${ e.clientY - 20 }px`;
     cursor.style.left = `${ e.clientX - 20 }px`;
 })
+
+//scrolling effects
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+        //do something
+        console.log('interacting')
+        entry.target.classList.remove("hidden");
+        entry.target.classList.add("show");
+    }})
+},{
+    threshold: '0.1'
+});
+
+document.querySelectorAll('.hidden').forEach((i) => {
+    if (i) {
+        observer.observe(i);
+    }
+});

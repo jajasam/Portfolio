@@ -57,6 +57,7 @@
     line-height: 70px;
     text-align: center;
     gap: 2rem;
+    display: none;
     /* background-color: var(--light); */
 }
 
