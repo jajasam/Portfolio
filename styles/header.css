@@ -14,7 +14,7 @@ header > div.container {
 .logo {
     font-family: 'Fascinate', cursive;
     font-size: 2.3rem;
-    color: var(--light);
+    color: white;
     /* background: url("../logo.png") no-repeat center/cover; */
 }
 
@@ -56,8 +56,11 @@ div.lang-btns {
     gap: 1rem;
 }
 
-.lang-btn:not(.current) {
+.lang-btn {
     cursor: pointer;
+}
+
+.lang-btn:not(.current) {
     opacity: 0.6;
 }
 
