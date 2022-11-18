@@ -52,8 +52,8 @@ html {
 }
 
 ::selection {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 
 .container {

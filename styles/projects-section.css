@@ -14,11 +14,12 @@
     width: 325px;
     height: 80%;
     border-radius: 6px;
-    box-shadow: 1px 1px 4px lightgrey;
+    box-shadow: 1px 3px 1px 1px rgba(225,225,225, 0.1);
 }
 
 .project:not(:last-child) {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 0.5px solid rgba(211,211,211, 0.4)
+    ;
 }
 
 .project-infos {
@@ -66,7 +67,6 @@
 
 .project_btns .btn:hover {
     font-weight: bold;
-    box-shadow: 1px 2px 4px lightgrey;
 }
 
 .project_btns .btn {
@@ -86,7 +86,7 @@
 .coming-soon {
     background-color: var(--very-dark-kaki);
     border-radius: 8px;
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
     overflow: hidden;
     position: relative;
 }
