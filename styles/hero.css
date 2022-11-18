@@ -157,6 +157,7 @@ h1 span {
 
     .hero_section img {
         width: 200px !important;
+        border-radius: 50%;
     }
 
     .hero_section .content .socials {
