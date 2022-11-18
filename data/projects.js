@@ -28,7 +28,7 @@ const projects = [
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
-                "preview": "./projects-preview/Portfolio.jpeg"
+                "preview": ""
             }
         ],
     "en":
@@ -52,7 +52,7 @@ const projects = [
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. This portfolio is responsive and offers to languages, such as French and English.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
-                "preview": "./projects-preview/Portfolio.jpeg"
+                "preview": ""
             },
             {
                 "title": "Weather App",

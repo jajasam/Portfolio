@@ -9,6 +9,7 @@ const menuModal = document.querySelector(".menu-modal");
 const body = document.querySelector("body");
 const navLinksMobile = document.querySelectorAll(".menu-modal .nav-links li");
 const downArrow = document.querySelector(".down-arrow");
+const cursor = document.querySelector(".cursor");
 
 
 let language = 'en';
@@ -82,6 +83,15 @@ navLinksMobile.forEach(link => link.addEventListener("click", () => {
     body.style.overflow = "scroll";
 }))
 
+//scroll to about section
 downArrow.addEventListener("click", () => {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+})
+
+
+//custom cursor
+window.addEventListener("mousemove", (e) => {
+    cursor.style.display = "block";
+    cursor.style.top = `${ e.clientY - 20 }px`;
+    cursor.style.left = `${ e.clientX - 20 }px`;
 })

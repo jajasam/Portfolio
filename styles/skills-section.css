@@ -9,6 +9,7 @@
     width: 100vw;
     height: 100%;
     background-color: var(--dark);
+    z-index: -1;
 }
 
 .skills_container {
@@ -33,16 +34,10 @@
 
 .skill img {
     height: 80px;
-    filter: grayscale(100%);
 }
 
 .skill:hover {
     transform: scale(1.2);
-}
-
-.skill:hover img {
-    height: 80px;
-    filter: grayscale(0);
 }
 
 .skill h4 {
