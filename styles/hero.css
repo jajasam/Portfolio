@@ -154,7 +154,7 @@ h1 span {
 
     .hero_section img {
         width: 200px !important;
-        border-radius: 50%;
+        /* border-radius: 50%; */
     }
 
     .hero_section .content .socials {
@@ -182,8 +182,8 @@ h1 span {
     .down-arrow {
         display: none;
     }
-
+/* 
     .colored-shape {
         display: none;
-    }
+    } */
 }

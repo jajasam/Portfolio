@@ -33,7 +33,7 @@ function displayProjects () {
     let markup = projectsContainer.innerHTML;
 
     for (let i = 0; i < projectsInCurrentLang.length; i++) {
-        const {title, technologies, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
+        const {title, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
 
         markup +=  `
         <div class="project ${comingSoon ? "coming-soon" : ""}">
@@ -44,7 +44,6 @@ function displayProjects () {
             }
             <div class="project-infos">
                 <h4>${title}</h4>
-                <p class="technologies">${technologies}</p>
                 <p>${description}</p>
                 <div class="project_btns">
                 ${

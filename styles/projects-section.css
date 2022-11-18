@@ -44,10 +44,6 @@
     margin: 0;
 }
 
-.project-infos .technologies {
-    opacity: 0.4;
-}
-
 .project_btns {
     flex-basis: 25%;
     display: flex;
@@ -74,22 +70,27 @@
 }
 
 .demo_btn {
-    background-color: white;
-    color: black;
+    background-color: var(--dark);
+    color: white;
 }
 
 .code_btn {
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
 }
 
 .coming-soon {
-    background-color: var(--very-dark-kaki);
+    background-color: rgba(225,225,225,0.1);
     border-radius: 8px;
-    /* color: rgba(0, 0, 0, 0.5); */
     overflow: hidden;
     position: relative;
 }
+
+.coming-soon p,
+.coming-soon h4 {
+    opacity: 0.6;
+}
+
 
 .coming-soon img {
     filter: blur(1px);
@@ -98,9 +99,9 @@
 .coming-soon .ribbon {
     width: 260px;
     height: 35px;
-    background-color: white;
+    background-color: var(--light);
     position: absolute;
-    color: black;
+    color: white;
     text-align: center;
     right: 0;
     top: -7px;
