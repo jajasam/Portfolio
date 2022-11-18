@@ -82,7 +82,7 @@ body {
   background-color: #1a1a1a;
   background-color: var(--very-dark);
   position: relative;
-  /* cursor: none; */
+  cursor: none;
 }
 
 main {
@@ -173,5 +173,6 @@ section h2::after {
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0;
+    cursor: default;
   }
 }

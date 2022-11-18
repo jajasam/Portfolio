@@ -91,6 +91,7 @@ downArrow.addEventListener("click", () => {
 
 //custom cursor
 window.addEventListener("mousemove", (e) => {
+    if (e.view.screen.availWidth < 768) return;
     cursor.style.display = "block";
     cursor.style.top = `${ e.clientY - 20 }px`;
     cursor.style.left = `${ e.clientX - 20 }px`;

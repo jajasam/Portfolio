@@ -178,10 +178,10 @@ h1 span {
         gap: 1rem;
         padding: 1rem 0 0 0;
     }
-/* 
+
     .down-arrow {
-        display: none;
-    } */
+        right: 2rem;
+    }
 
     .colored-shape {
         left: -10px !important;
