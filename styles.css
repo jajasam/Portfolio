@@ -76,8 +76,6 @@ body {
   font-size: 1.25rem;
   margin: 0;
   color: white;
-  background-color: rgba(0, 0, 0, 0.87);
-  background-color: #1a1a1a;
   background-color: var(--very-dark);
   position: relative;
   /* cursor: none; */
@@ -87,7 +85,6 @@ main {
   position: relative;
   min-height: 100vh;
   z-index: 1;
-  border-radius: 8px;
 }
 
 a {

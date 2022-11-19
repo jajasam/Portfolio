@@ -5,6 +5,7 @@ footer {
     border-top: 1px solid rgba(225, 225, 225, 0.5);
     display: flex;
     flex-direction: column;
+    position: relative;
     /* position: sticky;
     bottom: 0;
     display: flex; */
@@ -68,7 +69,10 @@ footer .socials ul {
 
 footer small {
     text-align: end;
-    color: rgba(225,225,225,0.4)
+    color: rgba(225,225,225,0.4);
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,5 +82,8 @@ footer small {
 
     footer .container {
         flex-direction: column;
+        align-items: normal;
+        padding: 0 5%;
+        gap: 0;
     }
 }
