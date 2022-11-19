@@ -34,6 +34,7 @@ html {
 
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -95,14 +96,13 @@ a {
 }
 
 section h2 {
-  padding-left: 2rem;
-  max-width: 1000px;
-  margin: auto;
-  /* font-family: 'Secular One', sans-serif; */
   font-family: "Oswald", sans-serif;
   letter-spacing: 1.2px;
-  position: relative;
   display: flex;
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 5%;
 }
 
 section h2::after {
@@ -114,16 +114,6 @@ section h2::after {
   background-color: var(--light);
   transform: translateX(-2.5rem);
 }
-
-/* section h2:first-child::after {
-    content: '';
-    height: 4px;
-    width: 3rem;
-    background-color: black;
-    display: flex;
-    margin: auto;
-    margin-top: 2px;
-} */
 
 .btn {
   cursor: pointer;
@@ -176,5 +166,9 @@ section h2::after {
   body {
     margin: 0 0;
     cursor: default;
+  }
+
+  section h2 {
+    padding: 0 10%;
   }
 }

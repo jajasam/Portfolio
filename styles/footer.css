@@ -3,6 +3,8 @@ footer {
     /* background: var(--light); */
     color: white;
     border-top: 1px solid rgba(225, 225, 225, 0.5);
+    display: flex;
+    flex-direction: column;
     /* position: sticky;
     bottom: 0;
     display: flex; */
@@ -11,18 +13,18 @@ footer {
 
 footer .container {
     display:flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 4rem;
     borde-radius: 10px;
     max-width: 1200px;
     width: 100%;
+    align-items: center;
 }
 
 footer .contact {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    margin: 3rem 0 0 0;
     /* font-size: rem; */
     /* margin: auto; */
 }
@@ -56,6 +58,14 @@ footer .contact .email:hover::after {
     width: 80%;
 }
 
+footer .socials {
+    max-width: 200px;
+}
+
+footer .socials ul {
+    padding: 0;
+}
+
 footer small {
     text-align: end;
     color: rgba(225,225,225,0.4)
@@ -63,6 +73,10 @@ footer small {
 
 @media screen and (max-width: 768px) {
     footer .contact {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    footer .container {
+        flex-direction: column;
     }
 }
