@@ -39,15 +39,8 @@ html {
 
 :root {
   --light: #cf5138;
-
-  /* --light: #ed774e; */
-  /* --light: #c2ba67; */
   --dark: #242424;
   --very-dark: #121212;
-
-  /* --kaki: #a5a880;
-    --dark-kaki: #707354;
-    --very-dark-kaki: #484a37; */
 }
 
 ::selection {

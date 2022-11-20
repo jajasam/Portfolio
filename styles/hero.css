@@ -67,7 +67,7 @@
 }
 
 .contact-btn:hover {
-    /* background-color: var(--very-dark-kaki); */
+    background-color: rgba(207, 81, 56, 0.6);
     color: white;
     border: none;
 }
