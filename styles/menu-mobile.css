@@ -32,7 +32,8 @@
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: var(--light);
+    background-color: white;
+    opacity: 0.6;
 }
 
 .hamburger-menu-close::before {
@@ -58,11 +59,16 @@
     text-align: center;
     gap: 2rem;
     display: none;
-    /* background-color: var(--light); */
+    background-color: var(--light);
 }
 
 .menu-modal ul {
     list-style-type: none;
+    display: flex; 
+    flex-direction: column;
+    align-items:center; 
+    justify-content:center;
+    height: 100%;
 }
 
 .menu-modal .socials li {
@@ -90,12 +96,6 @@
     padding-left: 0;
 }
 
-.menu-modal .socials {
-    display: flex;
-    gap: 2rem;
-    padding-left: 0;
-}
-
 .menu-modal .lang-btn {
     position: absolute;
     left: 2rem;
@@ -105,6 +105,7 @@
     border: none;
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 .menu-modal .hamburger-menu-close {

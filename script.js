@@ -100,11 +100,12 @@ window.addEventListener("mousemove", (e) => {
 const headingsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     if(entry.isIntersecting) {
-        entry.target.classList.remove("hide-from-right");
-        entry.target.classList.add("show-from-left");
-    } else {
-        //if vw is before elem
-}}),{
+            entry.target.classList.remove("hide-from-right");
+            entry.target.classList.add("show-from-left");
+        } else {
+            //if scrolled back up reset effect
+    }
+}),{
     threshold: '0.1'
 }});
 
@@ -119,11 +120,14 @@ document.querySelectorAll('.hide-from-right').forEach((i) => {
 const sectionContentObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     if(entry.isIntersecting) {
-        entry.target.classList.remove("hide-from-top");
-        entry.target.classList.add("show-from-bottom");
-    } else {
-        //if vw is before elem
-}}),{
+        if(entry.target.classList.contains("hide-from-top")) {
+            entry.target.classList.remove("hide-from-top");
+            entry.target.classList.add("show-from-bottom");
+        } else {
+            //if scrolled back up reset effect
+        }
+    }
+}),{
     threshold: '0.4'
 }});
 
