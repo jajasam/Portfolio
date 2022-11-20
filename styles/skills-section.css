@@ -7,9 +7,10 @@
 .skills_section-bg {
     position: absolute;
     width: 100vw;
-    height: 100%;
+    height: 120%;
     background-color: var(--dark);
     z-index: -1;
+    top: -10%;
 }
 
 .skills_container {
@@ -21,6 +22,7 @@
     justify-content: center;
     max-width: 1000px;
     margin: auto;
+    justify-items: center;
 }
 
 .skill {
@@ -45,6 +47,7 @@
 .skill h4 {
     margin: 10px auto;
     display: none;
+    text-align: center;
 }
 
 
@@ -54,29 +57,32 @@
 
 @media screen and (max-width:768px) {  
     .skills_container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 100px);
+        gap: 60px 0;
+        margin: auto 1rem;
     }
 
-    .skills_section {
-        margin: 10rem auto;
+    .skill {
+        font-size: 1rem;
+        text-align: center;
+        height: 60px;
+    }
+
+    .skill img {
+        height: 60px;
     }
 }
 
-@media screen and (max-width: 550px) { 
-    .skills_section {
-        margin: 5rem auto;
-    } 
-
+@media screen and (max-width: 450px) { 
     .skills_container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 50px);
-        gap: 100px 10px;
         margin: 0 5%;
         padding-top: 2rem;
     }
 
-    .skill img {
-        height: 75px;
+    .skill {
+        font-size: 0.75rem;
     }
 }
