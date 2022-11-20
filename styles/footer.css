@@ -86,4 +86,13 @@ footer small {
         padding: 0 5%;
         gap: 0;
     }
+    
+    footer .socials ul {
+        justify-content: start;
+    }
+
+    footer .socials .icon {
+        width: 25px;
+        height: 25px;
+    }
 }
