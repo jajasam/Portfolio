@@ -2,7 +2,8 @@
     line-height: 2;
     font-size: 1.6rem;
     text-align: justify;
-    padding: 0 10%;
+    padding: 0 13%;
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {

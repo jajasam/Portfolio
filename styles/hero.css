@@ -4,7 +4,7 @@
     min-height: 700px;
     max-height: 1000px;
     display: flex;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     border-radius: 8px 8px 0 0;
 }
 

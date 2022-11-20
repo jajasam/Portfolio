@@ -37,7 +37,7 @@ function displayProjects () {
         const {title, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
 
         markup +=  `
-        <div class="project ${comingSoon ? "coming-soon" : ""} hidden">
+        <div class="project ${comingSoon ? "coming-soon" : ""}  hide-from-top">
             <img src="${preview}" class="project-preview" />
             ${
                 comingSoon ?
@@ -88,7 +88,6 @@ downArrow.addEventListener("click", () => {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
 })
 
-
 //custom cursor
 window.addEventListener("mousemove", (e) => {
     if (e.view.screen.availWidth < 768) return;
@@ -97,21 +96,39 @@ window.addEventListener("mousemove", (e) => {
     cursor.style.left = `${ e.clientX - 20 }px`;
 })
 
-//scrolling effects
-const observer = new IntersectionObserver((entries) => {
+//scrolling effects on section heading
+const headingsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     if(entry.isIntersecting) {
-        //do something
-        entry.target.classList.remove("hidden");
-        entry.target.classList.add("show");
+        entry.target.classList.remove("hide-from-right");
+        entry.target.classList.add("show-from-left");
     } else {
         //if vw is before elem
 }}),{
     threshold: '0.1'
 }});
 
-document.querySelectorAll('.hidden').forEach((i) => {
+document.querySelectorAll('.hide-from-right').forEach((i) => {
     if (i) {
-        observer.observe(i);
+        headingsObserver.observe(i);
+    }
+});
+
+
+//scrolling effects on section content
+const sectionContentObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+        entry.target.classList.remove("hide-from-top");
+        entry.target.classList.add("show-from-bottom");
+    } else {
+        //if vw is before elem
+}}),{
+    threshold: '0.4'
+}});
+
+document.querySelectorAll('.hide-from-top').forEach((i) => {
+    if (i) {
+        sectionContentObserver.observe(i);
     }
 });
