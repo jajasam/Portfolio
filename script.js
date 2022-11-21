@@ -20,7 +20,7 @@ function displaySkills () {
 
     for (let i = 0; i < skills.length; i++) {
         markup += `
-            <div class="skill" data-animate="animate-y">
+            <div class="skill">
                 <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}">
                 <h4>${skills[i]}</h4>
             </div>`

@@ -33,7 +33,6 @@
     transition: all 0.1s ease;
     cursor: pointer;
     letter-spacing: 1.5px;
-    transform: translateY(200px);
 }
 
 .skill img {
