@@ -69,17 +69,17 @@ function setLanguage() {
 
 langBtn.addEventListener("click", setLanguage)
 hamburgerMenu.addEventListener("click", () => {
-    menuModal.style.display = "block";
+    menuModal.classList.toggle("open");
     body.style.overflow = "hidden";
 })
 
 hamburgerMenuClose.addEventListener("click", () => {
-    menuModal.style.display = "none";
+    menuModal.classList.toggle("open");
     body.style.overflow = "scroll";
 })
 
 navLinksMobile.forEach(link => link.addEventListener("click", () => {
-    menuModal.style.display = "none";
+    menuModal.classList.toggle("open");
     body.style.overflow = "scroll";
 }))
 

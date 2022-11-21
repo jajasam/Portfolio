@@ -47,19 +47,40 @@
 .menu-modal {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 0;
     margin: 0;
     z-index: 300;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     line-height: 70px;
     text-align: center;
-    gap: 2rem;
-    display: none;
     background-color: var(--light);
+    transform: scale(0);
+    transition: all 1s ease;
+    opacity: 0;
+    right: -100vw;
+    top: -50vh;
+    visibility: hidden;
+}
+
+.menu-modal.open {
+    transform: scale(1);
+    opacity: 1;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.menu-modal nav{
+    transition: opacity .2s ease 1s;
+    opacity: 0;
+}
+
+.menu-modal.open nav {
+    opacity: 1;
 }
 
 .menu-modal ul {
@@ -68,13 +89,7 @@
     flex-direction: column;
     align-items:center; 
     justify-content:center;
-    height: 100%;
-}
-
-.menu-modal .socials li {
-    background: #b5a5a1;
-    padding: 1rem;
-    border-radius: 50%;
+    position: relative;
 }
 
 .menu-modal ul li a {
