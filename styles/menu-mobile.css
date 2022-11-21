@@ -18,7 +18,7 @@
 }
 
 .hamburger-menu-close {
-    width: 15px;
+    width: 25px;
     height: 25px;
     z-index: 600;
     position: absolute;
@@ -115,12 +115,12 @@
 
 .menu-modal .lang-btn {
     position: absolute;
-    left: 2rem;
+    left: 0.75rem;
     top: 1rem;
     font-family: 'syncopate', sans-serif;
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: white;
 }
