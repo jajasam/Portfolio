@@ -34,7 +34,7 @@ html {
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 :root {
@@ -129,17 +129,17 @@ section h2::after {
 
 .github .icon {
   /* GitHub icon by Icons8 */
-  background: no-repeat url("../logos/sticky-bar/github-white.png") center;
+  background: no-repeat url("../logos/socials/github.png") center;
 }
 
 .linkedin .icon {
   /* LinkedIn 2 icon by Icons8 */
-  background: no-repeat url("../logos/sticky-bar/linkedin-white.png") center;
+  background: no-repeat url("../logos/socials/linkedin.png") center;
 }
 
 .mail .icon {
   /* Mail icon by Icons8 */
-  background: no-repeat url("../logos/sticky-bar/mail.png") center;
+  background: no-repeat url("../logos/socials/mail.png") center;
 }
 
 .show-from-bottom {

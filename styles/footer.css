@@ -1,53 +1,35 @@
 footer {
     height: 250px;
-    /* background: var(--light); */
-    color: white;
     border-top: 1px solid rgba(225, 225, 225, 0.5);
     display: flex;
-    flex-direction: column;
-    position: relative;
-    /* position: sticky;
-    bottom: 0;
-    display: flex; */
-    /* background-color: #181818; */
 }
 
 footer .container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     gap: 4rem;
-    borde-radius: 10px;
-    max-width: 1200px;
     width: 100%;
-    align-items: center;
 }
 
 footer .contact {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    /* font-size: rem; */
-    /* margin: auto; */
 }
 
 footer .contact p {
     margin: 0.25rem 0 ;
-    /* font-family: 'syncopate', sans-serif;
-    font-weight: 700; */
-    /* color: #b5a5a1; */
-    /* color: white; */
 }
 
 footer .contact .email {
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
     color: white;
-    /* padding: 0.5rem; */
 }
 
 footer .contact .email::after {
-  width: 0%;
   content: '';
+  width: 0%;
   height: 2px;
   display: flex;
   flex-direction: column;
@@ -56,7 +38,7 @@ footer .contact .email::after {
 }
 
 footer .contact .email:hover::after {
-    width: 80%;
+    width: 100%;
 }
 
 footer .socials {
@@ -76,10 +58,6 @@ footer small {
 }
 
 @media screen and (max-width: 768px) {
-    footer .contact {
-        font-size: 1rem;
-    }
-
     footer .container {
         flex-direction: column;
         align-items: normal;
@@ -89,10 +67,5 @@ footer small {
     
     footer .socials ul {
         justify-content: start;
-    }
-
-    footer .socials .icon {
-        width: 25px;
-        height: 25px;
     }
 }
