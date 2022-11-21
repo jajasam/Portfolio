@@ -120,12 +120,11 @@ section h2::after {
     justify-content: space-between;
     opacity: 0.8;
     gap: 1.5rem;
-    padding-right: 3rem;
 }
 
 .socials .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .github .icon {

@@ -51,6 +51,10 @@ header .left {
     justify-content: flex-end;
 }
 
+header .socials {
+    padding-right: 3rem;
+}
+
 div.lang-btns {
     display: flex;
     gap: 1rem;
