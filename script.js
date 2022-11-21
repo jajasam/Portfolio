@@ -22,7 +22,7 @@ function displaySkills () {
 
     for (let i = 0; i < skills.length; i++) {
         markup += `
-            <div class="skill">
+            <div class="skill hide-from-top">
                 <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}">
                 <h4>${skills[i]}</h4>
             </div>`
