@@ -48,15 +48,15 @@ html {
   background-color: white;
 }
 
-/* .cursor {
-  width: 50px;
-  height: 50px;
-  border: 1px solid var(--light);
-  position: absolute;
-  border-radius: 50%;
-  z-index: 10000;
-  display: hidden;
-} */
+@keyframes revealTextUp {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+}
 
 .container {
   max-width: 1200px;
@@ -71,7 +71,6 @@ body {
   color: white;
   background-color: var(--very-dark);
   position: relative;
-  /* cursor: none; */
 }
 
 main {
@@ -93,6 +92,7 @@ section h2 {
   max-width: 1000px;
   margin: auto;
   padding: 0 5%;
+  transform: translateX(-200px);
 }
 
 section h2::after {
@@ -143,25 +143,13 @@ section h2::after {
   background: no-repeat url("../logos/sticky-bar/mail.png") center;
 }
 
-.hide-from-top {
-  transform: translateY(200px);
-  opacity: 0;
-}
-
 .show-from-bottom {
-  transform: translateY(0);
-  opacity: 1;
+  transform: translateY(0) !important;
   transition: all 0.5s ease;
 }
 
-.hide-from-right {
-  transform: translateX(-200px);
-  opacity: 0;
-}
-
 .show-from-left {
-  transform: translateX(0);
-  opacity: 1;
+  transform: translateX(0) !important;
   transition: all 0.5s ease;
 }
 

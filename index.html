@@ -9,7 +9,6 @@
     <title>Jana Samson's portfolio</title>
 </head>
 <body>
-    <div class="cursor"></div>
     <div class="menu-modal">
         <div class="hamburger-menu-close"></div>
         <button class="lang-btn">FR</button>
@@ -81,12 +80,17 @@
                 <div class="top">
                     <div class="intro-img">
                         <div class="colored-shape"></div>
-                        <img src="./m.jpeg" alt="" class="shadow">
+                        <img src="./m.jpeg" alt="">
                     </div>
                     <div class="intro-text">
-                        <h1>Hello I'm <span>Jana Samson</span></h1>
+                        <div class="wrapper">
+                            <h1>Hello I'm <span>Jana Samson</span></h1>
+                        </div>
                         <p>Front-End Web Developer</p>
-                        <a href="mailto:jana.samson@hotmail.fr" class="contact-btn shadow">Contact me</a>
+                        <div>
+                            <a href="mailto:jana.samson@hotmail.fr" class="contact-btn">Contact me</a>
+                            <a href="" class="resume-btn">Resume</a>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom">
@@ -114,19 +118,19 @@
             </div>
         </section>
         <section id="about" class="about_section container">
-            <h2 class="hide-from-right">About</h2>
-            <p class="hide-from-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. Aliquam, aut animi perspiciatis, deleniti recusandae delectus libero, reiciendis excepturi et laboriosam aspernatur veniam natus praesentium cumque nam dolorem sunt accusantium voluptates quis maiores ut? Fuga, minus. Perspiciatis magni unde id quos nemo laborum. Perspiciatis magni unde id quos nemo laborum et dolorem. Perspiciatis, aut animi perspiciatis, so magni if id nemo laborum accusantium.
+            <h2 data-animate="animate-x">About</h2>
+            <p data-animate="animate-y">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. Aliquam, aut animi perspiciatis, deleniti recusandae delectus libero, reiciendis excepturi et laboriosam aspernatur veniam natus praesentium cumque nam dolorem sunt accusantium voluptates quis maiores ut? Fuga, minus. Perspiciatis magni unde id quos nemo laborum. Perspiciatis magni unde id quos nemo laborum et dolorem. Perspiciatis, aut animi perspiciatis, so magni if id nemo laborum accusantium.
             </p>
         </section>
         <section id="skills" class="skills_section">
             <div class="skills_section-bg"></div>
             <div class="container">
-                <h2 class="hide-from-right">Skills</h2>
+                <h2 data-animate="animate-x">Skills</h2>
                 <div class="skills_container"></div>
             </div>
         </section>
         <section id="projects" class="projects_section container">
-            <h2 class="hide-from-right">Projects</h2>
+            <h2 data-animate="animate-x">Projects</h2>
             <div class="projects_container">
             </div>
         </section>

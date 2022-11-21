@@ -9,8 +9,6 @@ const menuModal = document.querySelector(".menu-modal");
 const body = document.querySelector("body");
 const navLinksMobile = document.querySelectorAll(".menu-modal .nav-links li");
 const downArrow = document.querySelector(".down-arrow");
-const cursor = document.querySelector(".cursor");
-
 
 let language = 'en';
 const projectsInCurrentLang = projects[0][language];
@@ -22,7 +20,7 @@ function displaySkills () {
 
     for (let i = 0; i < skills.length; i++) {
         markup += `
-            <div class="skill hide-from-top">
+            <div class="skill" data-animate="animate-y">
                 <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}">
                 <h4>${skills[i]}</h4>
             </div>`
@@ -37,7 +35,7 @@ function displayProjects () {
         const {title, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
 
         markup +=  `
-        <div class="project ${comingSoon ? "coming-soon" : ""}  hide-from-top">
+        <div class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
             <img src="${preview}" class="project-preview" />
             ${
                 comingSoon ?
@@ -88,28 +86,17 @@ downArrow.addEventListener("click", () => {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
 })
 
-//custom cursor
-window.addEventListener("mousemove", (e) => {
-    if (e.view.screen.availWidth < 768) return;
-    cursor.style.display = "block";
-    cursor.style.top = `${ e.clientY - 20 }px`;
-    cursor.style.left = `${ e.clientX - 20 }px`;
-})
-
 //scrolling effects on section heading
 const headingsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     if(entry.isIntersecting) {
-        entry.target.classList.remove("hide-from-right");
-        entry.target.classList.add("show-from-left");
-    } else {
-        entry.target.classList.remove("show-from-left");
-        entry.target.classList.add("hide-from-right");
-}}),{
-    threshold: '0.1'
+        entry.target.classList.add("show-from-left", entry.isIntersecting);
+    }
+}),{
+    threshold: 1
 }});
 
-document.querySelectorAll('.hide-from-right').forEach((i) => {
+document.querySelectorAll('[data-animate="animate-x"]').forEach((i) => {
     if (i) {
         headingsObserver.observe(i);
     }
@@ -120,17 +107,13 @@ document.querySelectorAll('.hide-from-right').forEach((i) => {
 const sectionContentObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     if(entry.isIntersecting) {
-        console.log(entry)
-        entry.target.classList.remove("hide-from-top");
         entry.target.classList.add("show-from-bottom");
-    } else {
-        entry.target.classList.remove("show-from-bottom");
-        entry.target.classList.add("hide-from-top");
-}}),{
-    threshold: '0.4'
+    }
+}),{
+    threshold: 1
 }});
 
-document.querySelectorAll('.hide-from-top').forEach((i) => {
+document.querySelectorAll('[data-animate="animate-y"]').forEach((i) => {
     if (i) {
         sectionContentObserver.observe(i);
     }

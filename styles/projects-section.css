@@ -9,6 +9,7 @@
     align-items: center;
     height: 300px;
     padding: 1rem 2rem;
+    transform: translateY(200px);
 }
 
 .project-preview {
