@@ -85,12 +85,8 @@
     opacity: 0;
 }
 
-.menu-modal ul li:nth-child(2) {
-    transform: translateY(-75px);
-}
-
-.menu-modal ul li:nth-child(3) {
-    transform: translateY(-145px);
+.menu-modal ul li {
+    transform: translateY(-100vh);
 }
 
 .menu-modal.open ul li {
