@@ -93,7 +93,7 @@ const headingsObserver = new IntersectionObserver((entries) => {
         entry.target.classList.add("show-from-left", entry.isIntersecting);
     }
 }),{
-    threshold: 1
+    threshold: 0.3
 }});
 
 document.querySelectorAll('[data-animate="animate-x"]').forEach((i) => {
@@ -110,7 +110,7 @@ const sectionContentObserver = new IntersectionObserver((entries) => {
         entry.target.classList.add("show-from-bottom");
     }
 }),{
-    threshold: 1
+    threshold: 0.3
 }});
 
 document.querySelectorAll('[data-animate="animate-y"]').forEach((i) => {
