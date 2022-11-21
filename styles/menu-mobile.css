@@ -57,11 +57,8 @@
     line-height: 70px;
     text-align: center;
     background-color: var(--light);
-    transform: scale(0);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     opacity: 0;
-    right: -100vw;
-    top: -50vh;
     visibility: hidden;
 }
 
@@ -74,15 +71,6 @@
     visibility: visible;
 }
 
-.menu-modal nav{
-    transition: opacity .2s ease 1s;
-    opacity: 0;
-}
-
-.menu-modal.open nav {
-    opacity: 1;
-}
-
 .menu-modal ul {
     list-style-type: none;
     display: flex; 
@@ -90,6 +78,24 @@
     align-items:center; 
     justify-content:center;
     position: relative;
+}
+
+.menu-modal ul li {
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.menu-modal ul li:nth-child(2) {
+    transform: translateY(-75px);
+}
+
+.menu-modal ul li:nth-child(3) {
+    transform: translateY(-145px);
+}
+
+.menu-modal.open ul li {
+    transform: translateY(0) !important;
+    opacity: 1;
 }
 
 .menu-modal ul li a {
