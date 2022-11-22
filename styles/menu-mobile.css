@@ -81,7 +81,7 @@
 }
 
 .menu-modal ul li {
-    transition: all .5s ease;
+    transition: all .9s ease;
     opacity: 0;
 }
 
@@ -91,6 +91,7 @@
 
 .menu-modal.open ul li {
     transform: translateY(0) !important;
+    transition: all .8s ease;
     opacity: 1;
 }
 
