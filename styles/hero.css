@@ -17,6 +17,7 @@
     justify-content: space-between;
     gap: 4rem;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .intro-img {
@@ -153,6 +154,7 @@ h1 span {
 
     .hero_section .content .top {
         gap: 2rem !important;
+        margin-top: 0 !important;
     }
 
     .hero_section .intro-text {
