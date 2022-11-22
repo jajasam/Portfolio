@@ -52,7 +52,7 @@ h1 {
     margin: 0;
     font-family: 'Oswald', sans-serif;
     transform: translateY(100%);
-    animation: revealTextUp 0.8s forwards;
+    animation: revealTextUp 0.8s forwards 0.5s;
     /* text-transform: uppercase; */
     /* color: var(--light); */
 } 
