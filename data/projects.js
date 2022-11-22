@@ -4,6 +4,7 @@ const projects = [
         [
             {
                 "title": "E-commerce",
+                "tags": "HTML CSS REACT",
                 "description": "App e-commerce pour une compagnie de système audio développé.",
                 "linkToDemo": "https://aesthetic-centaur-7df753.netlify.app/",
                 "linkToCode": "https://github.com/jajasam/Ecommerce-app",
@@ -11,6 +12,7 @@ const projects = [
             },
             {
                 "title": "Liste to do",
+                "tags": "HTML CSS JAVASCRIPT",
                 "description": "Ce projet de Frontend mentor a été une pratique pour répliqué un design au pixel prêt. Cette liste to do offre deux modes (light et dark) et permet de réorganiser les to do en les glissant et déposant.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
                 "linkToCode": "https://github.com/jajasam/To-do-app",
@@ -18,6 +20,7 @@ const projects = [
             },
             {
                 "title": "Weather App",
+                "tags": "HTML CSS REACT API",
                 "description": "API",
                 "linkToDemo": "",
                 "linkToCode": "",
@@ -25,6 +28,7 @@ const projects = [
             },
             {
                 "title": "This portfolio",
+                "tags": "HTML CSS JAVASCRIPT",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
@@ -35,6 +39,7 @@ const projects = [
         [
             {
                 "title": "E-commerce",
+                "tags": "HTML CSS REACT",
                 "description": "Ecommerce app for audio systems built with React.",
                 "linkToDemo": "",
                 "linkToCode": "",
@@ -42,6 +47,7 @@ const projects = [
             },
             {
                 "title": "To do list",
+                "tags": "HTML CSS JAVASCRIPT",
                 "description": "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive, offers two modes (light and dark) and contains a drag and drop functionnality to reorder the todos.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
                 "linkToCode": "",
@@ -49,6 +55,7 @@ const projects = [
             },
             {
                 "title": "This portfolio",
+                "tags": "HTML CSS JAVASCRIPT",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. This portfolio is responsive and offers to languages, such as French and English.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
@@ -56,6 +63,7 @@ const projects = [
             },
             {
                 "title": "Weather App",
+                "tags": "HTML CSS REACT",
                 "description": "API",
                 "linkToDemo": "",
                 "linkToCode": "",

@@ -17,7 +17,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
 
 @import "./styles/header.css";
 @import "./styles/hero.css";
@@ -34,7 +34,6 @@ html {
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 :root {
@@ -68,8 +67,8 @@ body {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 1.25rem;
   margin: 0;
-  color: white;
   background-color: var(--very-dark);
+  color: white;
   position: relative;
 }
 

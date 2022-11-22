@@ -32,7 +32,7 @@ function displayProjects () {
     let markup = projectsContainer.innerHTML;
 
     for (let i = 0; i < projectsInCurrentLang.length; i++) {
-        const {title, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
+        const {title, tags, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
 
         markup +=  `
         <div class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
@@ -43,6 +43,7 @@ function displayProjects () {
             }
             <div class="project-infos">
                 <h4>${title}</h4>
+                <p class="tags">${tags}</p>
                 <p>${description}</p>
                 <div class="project_btns">
                 ${
