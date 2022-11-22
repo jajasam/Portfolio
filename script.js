@@ -36,7 +36,7 @@ function displayProjects () {
 
         markup +=  `
         <li class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
-            <img src="${preview}" class="project-preview" />
+            <img src="${preview}" alt="${title}" class="project-preview" />
             ${
                 comingSoon ?
                 "<span class='ribbon'>Coming Soon</span>" : ""
