@@ -3,50 +3,29 @@
     {
         "about":"À propos",
         "skills": "Compétences",
-        "projects": "Projets",
-        "contact": "Contact"
+        "projects": "Projets"
     },
     "header": 
     {
-        "welcome": "Bonjour, je suis",
-        "role": "développeur web front-end",
-        "contact me": "Me contacter"
+        "welcome": "Bonjour, je suis Jana Samson",
+        "role": "développeuse web front-end",
+        "contact me": "Me contacter",
+        "resume": "Curriculum vitae"
     },
     "about-section":
     {
         "title": "À propos",
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. Aliquam, aut animi perspiciatis, deleniti recusandae delectus libero, reiciendis excepturi et laboriosam aspernatur veniam natus praesentium cumque nam dolorem sunt accusantium voluptates quis maiores ut? Fuga, minus. Perspiciatis magni unde id quos nemo laborum. Self-taught web developer from Montreal."
+        "text": "Bonjour, je suis Jana! J'ai 22 ans et je suis une développeuse front-end autodidacte de Montréal. J'ai commencé à apprendre le développement web il y a plus d'un an à travers de ressources en ligne telles que FreeCodeCamp, The Odin Project and CodeCademy. J'ai passé beaucoup de temps à pratiquer en développant plusieurs projets. J'ai aussi pu travailler sur de vrais projets avec une équipe lors de mon stage en agence. Cette expérience m'a confirmé que le dévelopement web était pour moi et je suis maintenant prête pour la prochaine étape. Mon but actuel est de continuer d'acquérir des compétences tout en apportant une valeur commerciale. Je suis sympathique, travaillante et passionnée. J'attache une grande importance aux détails et au design réactif."
     },
     "skills-section": 
     {
         "title": "Compétences"
-    },
-    "projects-section": 
-    {
-        "1" : {
-            "title": "E-commerce",
-            "description": "Ecommerce app for audio systems built with React."
-        },
-        "2" : {
-            "title": "To do list",
-            "description": "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive, offers two modes (light and dark) and contains a drag and drop functionnality to reorder the todos."
-        },
-        "3" : {
-            "title": "Weather App",
-            "description": "API"
-        },
-        "4" : {
-            "title": "This portfolio",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus."
-        }
-    },  
+    }, 
     "contact-section": 
     {
-        "title": "Let's get in touch",
-        "name": "name",
-        "message": "message"
+        "title": "Pour prendre contact"
     },
     "footer": {
-        "info": "2022 - Created by Jana Samson"
+        "info": "2022 - Par Jana Samson"
     }
 }

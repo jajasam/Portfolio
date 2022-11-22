@@ -11,3 +11,10 @@
         padding: 0 5%;
     }
 }
+
+@media (prefers-reduced-motion) {
+    #about p {
+        transform: translateY(0);
+    }
+}
+  

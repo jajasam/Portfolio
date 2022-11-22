@@ -191,3 +191,9 @@ section h2::after {
     padding: 0 0.15rem;
   }
 }
+
+@media (prefers-reduced-motion) {
+  section h2 {
+    transform: translateX(0);
+  }
+}

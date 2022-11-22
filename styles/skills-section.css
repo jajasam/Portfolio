@@ -88,3 +88,9 @@
         padding-top: 4rem;
     }
 }
+
+@media (prefers-reduced-motion) {
+    .skills_container {
+        transform: translateY(0);
+    }
+}
