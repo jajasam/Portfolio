@@ -74,6 +74,11 @@
     .skill img {
         height: 60px;
     }
+
+    .skills_section::before {
+        height: 118%;
+        top: -9%;
+    }
 }
 
 @media screen and (max-width: 350px) { 
