@@ -96,7 +96,7 @@
 
 .coming-soon p,
 .coming-soon h4 {
-    opacity: 0.6;
+    opacity: 0.6 !important;
 }
 
 
