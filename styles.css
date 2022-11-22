@@ -19,6 +19,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
 @import "./styles/header.css";
 @import "./styles/hero.css";
 @import "./styles/menu-mobile.css";
@@ -27,10 +30,10 @@
 @import "./styles/projects-section.css";
 @import "./styles/footer.css";
 
-/* 
+
 html {
   scroll-behavior: smooth;
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -38,10 +41,30 @@ html {
 }
 
 :root {
+  --white: #f8f8f8;
   --light: #cf5138;
   --dark: #242424;
   --very-dark: #121212;
 }
+
+/* .light {
+  --bg-color: var(--white); */
+  /* --box-shadow: var(--light-box-shadow);
+  --main-text-color: var(--blue3);
+  --sub-text-color: var(--grey2); */
+  /* transition: all 0.7s ease-in;
+} */
+
+/* .dark {
+  --bg-color: var(--very-dark); */
+  /* --box-shadow: var(--dark-box-shadow);
+  --border-grid: var(--blue3);
+  --main-text-color: var(--grey1);
+  --main-text-completed-color: var(--blue4);
+  --sub-text-color: var(--blue2); */
+  /* transition: all 0.7s ease-out;
+} */
+
 
 ::selection {
   color: black;
@@ -59,7 +82,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -84,14 +107,16 @@ a {
   cursor: pointer;
 }
 
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 section h2 {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1.2px;
   display: flex;
   position: relative;
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 5%;
   transform: translateX(-200px);
 }
 
@@ -100,9 +125,9 @@ section h2::after {
   position: absolute;
   top: 50%;
   height: 4px;
-  width: 2rem;
+  width: 3rem;
   background-color: var(--light);
-  transform: translateX(-2.5rem);
+  transform: translateY(2rem);
 }
 
 .btn {
@@ -152,6 +177,12 @@ section h2::after {
   transition: all 0.5s ease;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0;
@@ -159,6 +190,6 @@ section h2::after {
   }
 
   section h2 {
-    padding: 0 10%;
+    justify-content: center;
   }
 }

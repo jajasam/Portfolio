@@ -20,10 +20,10 @@ function displaySkills () {
 
     for (let i = 0; i < skills.length; i++) {
         markup += `
-            <div class="skill">
+            <li class="skill">
                 <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}">
-                <h4>${skills[i]}</h4>
-            </div>`
+                <p>${skills[i]}</p>
+            </li>`
     }
     skillsContainer.innerHTML = markup;
 };
@@ -35,15 +35,19 @@ function displayProjects () {
         const {title, tags, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
 
         markup +=  `
-        <div class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
+        <li class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
             <img src="${preview}" class="project-preview" />
             ${
                 comingSoon ?
                 "<span class='ribbon'>Coming Soon</span>" : ""
             }
             <div class="project-infos">
-                <h4>${title}</h4>
-                <p class="tags">${tags}</p>
+                <h3>${title}</h3>
+                <ul class="tags">
+                    ${
+                        tags.map(tag => `<li class="tag">${tag}</li>`).join('')
+                    }
+                </ul>
                 <p>${description}</p>
                 <div class="project_btns">
                 ${
@@ -53,7 +57,7 @@ function displayProjects () {
                 }
                 </div>
             </div> 
-        </div>`
+        </li>`
     }
 
     projectsContainer.innerHTML = markup;
@@ -66,7 +70,6 @@ function setLanguage() {
     langBtn.textContent = language === "en" ? "FR" : "EN";
 }
 
-langBtn.addEventListener("click", setLanguage)
 hamburgerMenu.addEventListener("click", () => {
     menuModal.classList.toggle("open");
     body.style.overflow = "hidden";

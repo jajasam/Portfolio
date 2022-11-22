@@ -46,7 +46,7 @@
 
 .menu-modal {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 0;
     margin: 0;
     z-index: 300;
@@ -72,7 +72,6 @@
 }
 
 .menu-modal ul {
-    list-style-type: none;
     display: flex; 
     flex-direction: column;
     align-items:center; 
@@ -108,10 +107,6 @@
 .menu-modal ul li a:focus,
 .menu-modal ul li a:active {
     font-size: 2.5rem;
-}
-
-.menu-modal .nav-links {
-    padding-left: 0;
 }
 
 .menu-modal .lang-btn {

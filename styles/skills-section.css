@@ -3,26 +3,27 @@
     position: relative;
 }
 
-.skills_section-bg {
+.skills_section::before {
+    content: "";
     position: absolute;
     width: 100vw;
-    height: 120%;
+    height: 110%;
     background-color: var(--dark);
     z-index: -1;
-    top: -10%;
+    top: -5%;
 }
 
 .skills_container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 150px);
-    list-style: none;
     align-items: center;
     justify-content: center;
-    max-width: 1000px;
-    margin: auto;
     justify-items: center;
     transform: translateY(200px);
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 2rem;
 }
 
 .skill {
@@ -40,18 +41,20 @@
     height: 80px;
 }
 
-.skill:hover {
+.skill:hover,
+.skill:focus {
     transform: scale(1.2);
 }
 
-.skill h4 {
+.skill p {
     margin: 10px auto;
     display: none;
     text-align: center;
 }
 
 
-.skill:hover h4 {
+.skill:hover p,
+.skill:focus p {
     display: block;
 }
 

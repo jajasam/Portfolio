@@ -1,8 +1,7 @@
 #about p {
-    line-height: 2;
+    line-height: 1.8;
     font-size: 1.6rem;
     text-align: justify;
-    padding: 0 13%;
     transform: translateY(200px);
 }
 

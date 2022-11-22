@@ -3,6 +3,8 @@
     min-height: 700px;
     max-height: 1000px;
     display: flex;
+    padding-top: 3rem;
+    position: relative;
 }
 
 .hero_section .content {
@@ -12,12 +14,11 @@
     gap: 10rem;
 }
 
-.hero_section .content div.top {
+.hero_section .content .top {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 6rem;
     align-items: center;
-    margin-top: 3rem;
 }
 
 .intro-img {
@@ -89,7 +90,8 @@ h1 span {
     background-color: var(--light);
 }
 
-.contact-btn:hover {
+.contact-btn:hover,
+.contact-btn:focus {
     background-color: rgba(207, 81, 56, 0.6);
     font-weight: bold;
 }
@@ -99,7 +101,8 @@ h1 span {
     border: 1px solid var(--light);
 }
 
-.resume-btn:hover {
+.resume-btn:hover,
+.resume-btn:focus {
     color: var(--light);
 }
 
@@ -126,6 +129,7 @@ h1 span {
     cursor: pointer;
     position: absolute;
     right: 5rem;
+    bottom: 8rem;
     width: 40px;
     height: 40px;
     animation: bounce 2s infinite;

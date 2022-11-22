@@ -4,7 +4,7 @@ const projects = [
         [
             {
                 "title": "E-commerce",
-                "tags": "HTML CSS REACT",
+                "tags": ["HTML", "CSS", "REACT"],
                 "description": "App e-commerce pour une compagnie de système audio développé.",
                 "linkToDemo": "https://aesthetic-centaur-7df753.netlify.app/",
                 "linkToCode": "https://github.com/jajasam/Ecommerce-app",
@@ -12,7 +12,7 @@ const projects = [
             },
             {
                 "title": "Liste to do",
-                "tags": "HTML CSS JAVASCRIPT",
+                "tags": ["HTML", "CSS", "REACT"],
                 "description": "Ce projet de Frontend mentor a été une pratique pour répliqué un design au pixel prêt. Cette liste to do offre deux modes (light et dark) et permet de réorganiser les to do en les glissant et déposant.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
                 "linkToCode": "https://github.com/jajasam/To-do-app",
@@ -20,16 +20,16 @@ const projects = [
             },
             {
                 "title": "Weather App",
-                "tags": "HTML CSS REACT API",
-                "description": "API",
+                "tags": ["HTML", "CSS", "REACT"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "",
                 "linkToCode": "",
                 "preview": "./projects-preview/W.png"
             },
             {
                 "title": "This portfolio",
-                "tags": "HTML CSS JAVASCRIPT",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus.",
+                "tags": ["HTML", "CSS", "REACT"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
                 "preview": "./projects-preview/Portfolio.png"
@@ -39,32 +39,32 @@ const projects = [
         [
             {
                 "title": "E-commerce",
-                "tags": "HTML CSS REACT",
-                "description": "Ecommerce app for audio systems built with React.",
+                "tags": ["HTML", "CSS", "REACT"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "",
                 "linkToCode": "",
                 "preview": "./projects-preview/Ecomm.png"
             },
             {
                 "title": "To do list",
-                "tags": "HTML CSS JAVASCRIPT",
-                "description": "This project from Frontend mentor was a practice to replicate pixel perfect a given design. This todo list is responsive, offers two modes (light and dark) and contains a drag and drop functionnality to reorder the todos.",
+                "tags": ["HTML", "CSS", "REACT"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
                 "linkToCode": "",
                 "preview": "./projects-preview/Todo.png"
             },
             {
                 "title": "This portfolio",
-                "tags": "HTML CSS JAVASCRIPT",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque magni temporibus. This portfolio is responsive and offers to languages, such as French and English.",
+                "tags": ["HTML", "CSS", "REACT"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "janasamson.com",
                 "linkToCode": "",
                 "preview": "./projects-preview/Portfolio.png"
             },
             {
                 "title": "Weather App",
-                "tags": "HTML CSS REACT",
-                "description": "API",
+                "tags": ["HTML", "CSS", "REACT"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "",
                 "linkToCode": "",
                 "preview": "./projects-preview/W.png",
