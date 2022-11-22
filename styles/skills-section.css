@@ -64,6 +64,7 @@
         grid-template-rows: repeat(3, 100px);
         gap: 60px 0;
         margin: auto 1rem;
+        padding: 0 2rem;
     }
 
     .skill {
