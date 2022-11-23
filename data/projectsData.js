@@ -22,8 +22,8 @@ const projects = [
                 "title": "Weather App",
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                "linkToDemo": "",
-                "linkToCode": "",
+                "linkToDemo": "#",
+                "linkToCode": "#",
                 "preview": "./projects-preview/W.png"
             },
             {
@@ -31,7 +31,7 @@ const projects = [
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "janasamson.com",
-                "linkToCode": "",
+                "linkToCode": "#",
                 "preview": "./projects-preview/Portfolio.png"
             }
         ],
@@ -41,8 +41,8 @@ const projects = [
                 "title": "E-commerce",
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                "linkToDemo": "",
-                "linkToCode": "",
+                "linkToDemo": "#",
+                "linkToCode": "#",
                 "preview": "./projects-preview/Ecomm.png"
             },
             {
@@ -50,7 +50,7 @@ const projects = [
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
-                "linkToCode": "",
+                "linkToCode": "#",
                 "preview": "./projects-preview/Todo.png"
             },
             {
@@ -58,15 +58,15 @@ const projects = [
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "janasamson.com",
-                "linkToCode": "",
+                "linkToCode": "#",
                 "preview": "./projects-preview/Portfolio.png"
             },
             {
                 "title": "Weather App",
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                "linkToDemo": "",
-                "linkToCode": "",
+                "linkToDemo": "#",
+                "linkToCode": "#",
                 "preview": "./projects-preview/W.png",
                 "comingSoon": true
             },
