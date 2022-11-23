@@ -1,26 +1,14 @@
-/* body */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
-
 /* menu nav links */
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
 
-/*  */
+/* logo */
 @import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
 
-/* backup for h1 */
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
-
-/* body 2 */
-@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
-
+/* headings */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 
+/* body */
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
 
 @import "./styles/header.css";
 @import "./styles/hero.css";
@@ -94,8 +82,7 @@ svg path {
 }
 
 body {
-  /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   font-size: 1.25rem;
   margin: 0;
   background-color: var(--bg-color);
