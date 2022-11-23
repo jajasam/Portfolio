@@ -31,5 +31,5 @@ themeIcon.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
     const theme = window.localStorage.getItem('theme');
-    theme == 'light' ? switchTheme('light') : switchTheme('dark')
+    theme == 'dark' ? switchTheme('dark') : switchTheme('light')
 })
