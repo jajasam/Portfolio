@@ -121,20 +121,35 @@ ul {
 
 section h2 {
   font-family: "Oswald", sans-serif;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
   display: flex;
   position: relative;
-  transform: translateX(-200px);
+  text-transform: uppercase;
+  color: var(--light);
+  justify-content: center;
+  font-size: 1.4rem;
+  font-stretch: expanded;
+  margin-bottom: 3rem !important;
 }
 
 section h2::after {
   content: "";
   position: absolute;
-  top: 50%;
   height: 4px;
   width: 3rem;
   background-color: var(--light);
-  transform: translateY(2rem);
+  transform: translateY(2.2rem);
+}
+
+section h3 {
+  text-align: center;
+  transform: translateX(-200px);
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  max-width: 75%;
+  margin: 0 auto 3rem auto;
+  font-weight: 400;
+  opacity: 0.4;
 }
 
 .btn,
@@ -172,21 +187,33 @@ svg {
     cursor: default;
   }
 
-  section h2 {
-    justify-content: center;
-  }
-
   .container {
     padding: 0 0.15rem;
+  }
+
+  section h2 {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem !important;
+  }
+
+  section h2::after {
+    transform: translateY(1.3rem);
+    width: 1.5rem;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+    max-width: 90%;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (prefers-reduced-motion) {
-  section h2 {
+  section h3 {
     transform: translateX(0);
   }
 }
 
-// All icons are from icon8 and 
+// All icons are from icon8 and iconscout
 // https://icons8.com/
 // https://iconscout.com/

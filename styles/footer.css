@@ -24,7 +24,7 @@ footer .contact p {
 footer .contact .email {
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
-    color: white;
+    color: var(--main-text-color);
 }
 
 footer .contact .email::after {
@@ -33,7 +33,7 @@ footer .contact .email::after {
   height: 2px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--main-text-color);
   transition: all 0.5s ease;
 }
 

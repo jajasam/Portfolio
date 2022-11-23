@@ -17,7 +17,7 @@ function displayProjects (lang = 'en') {
                 "<span class='ribbon' id='coming-soon'>Coming soon</span>" : ""
             }
             <div class="project-infos">
-                <h3>${title}</h3>
+                <h4>${title}</h4>
                 <ul class="tags">
                     ${
                         tags.map(tag => `<li class="tag">${tag}</li>`).join('')
