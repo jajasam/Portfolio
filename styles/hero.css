@@ -47,14 +47,14 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     letter-spacing: 1.4px;
-    font-family: 'Secular One', sans-serif;
     margin: 0;
     font-family: 'Oswald', sans-serif;
     transform: translateY(100%);
     animation: revealTextUp 0.8s forwards 0.5s;
-    /* text-transform: uppercase; */
+    font-weight: 400;
+    text-transform: uppercase;
     /* color: var(--light); */
 } 
 
@@ -63,7 +63,7 @@ h1 span {
 }
 
 .hero_section .content .intro-text p {
-    font-size: 1.5em;
+    font-size: 1.75rem;
     margin: 0 0 2rem 0;
     opacity: 0.9;
 }
@@ -180,7 +180,11 @@ h1 span {
     }
 
     .intro-text h1 {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
+    }
+
+    .hero_section .content .intro-text p {
+        font-size: 1.5rem;
     }
 
     .hero_section img {
@@ -226,6 +230,14 @@ h1 span {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
+    }
+
+    .intro-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero_section .content .intro-text p {
+        font-size: 1.15rem;
     }
 }
 
