@@ -70,22 +70,27 @@
 .project_btns .btn {
     transition: all 0.1s ease;
     display: flex;
-    align-items: center;
     position: relative;
-    width: 100px;
-    justify-content: center;
+    min-width: 120px;
+    align-items: center;
 }
 
-/* .project_btns .btn:hover::after {
-    content: "→";
-    width: 30px;
-    height: 10px;
-    position: relative;
-} */
+.project_btns .btn::after {
+    content: "⟶";
+    font-size: 2rem;
+    position: absolute;
+    transform: translateX(58px) translateY(-3px);
+    transition: transform 0.2s ease;
+}
+
+.project_btns .btn:hover::after {
+    transform: translateX(65px) translateY(-3px);
+}
 
 .project_btns .btn:hover,
 .project_btns .btn:focus {
     font-weight: bold;
+    letter-spacing: 1.2px;
 }
 
 .demo_btn {

@@ -33,7 +33,6 @@
     align-items:center;
     cursor: pointer;
     letter-spacing: 1.5px;
-    transition: all 0.1s ease;
 }
 
 .skill-logo {
@@ -52,15 +51,16 @@
 
 .skill p {
     margin: 10px auto;
-    display: none;
+    opacity: 0;
     text-align: center;
+    transition: all 0.1s ease;
 }
 
 
 .skill:hover p,
 .skill:focus p {
-    display: block;
     color: var(--light);
+    opacity: 1;
 }
 
 @media screen and (max-width:768px) {  
