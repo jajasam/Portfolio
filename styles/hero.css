@@ -63,7 +63,7 @@ h1 span {
 }
 
 .hero_section .content .intro-text p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0 0 2rem 0;
     opacity: 0.9;
 }
@@ -81,7 +81,8 @@ h1 span {
     text-align: center;
     height: 40px;
     line-height: 40px;
-    min-width: 180px;
+    min-width: 160px;
+    max-width: 200px;
 }
 
 .contact-btn {
@@ -98,6 +99,14 @@ h1 span {
 .resume-btn {
     color: white;
     border: 1px solid var(--light);
+}
+
+.light .resume-btn {
+    color: var(--light);
+}
+
+.light .resume-btn:hover {
+    color: black;
 }
 
 .resume-btn:hover,

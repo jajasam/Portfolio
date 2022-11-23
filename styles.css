@@ -31,9 +31,9 @@
 @import "./styles/footer.css";
 
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -47,24 +47,31 @@ html {
   --very-dark: #121212;
 }
 
-/* .light {
-  --bg-color: var(--white); */
-  /* --box-shadow: var(--light-box-shadow);
-  --main-text-color: var(--blue3);
-  --sub-text-color: var(--grey2); */
-  /* transition: all 0.7s ease-in;
-} */
+.light {
+  --bg-color: white;
+  --main-text-color: black;
+  --skills-bg: var(--white);
+  transition: all 0.7s ease-in;
+}
 
-/* .dark {
-  --bg-color: var(--very-dark); */
-  /* --box-shadow: var(--dark-box-shadow);
-  --border-grid: var(--blue3);
-  --main-text-color: var(--grey1);
-  --main-text-completed-color: var(--blue4);
-  --sub-text-color: var(--blue2); */
-  /* transition: all 0.7s ease-out;
-} */
+.dark {
+  --bg-color: var(--very-dark);
+  --main-text-color: white;
+  --skills-bg: var(--dark);
+  transition: all 0.7s ease-out;
+}
 
+svg path {
+  transition: all 0.2s ease;
+}
+
+.light svg path {
+  fill: black;
+}
+
+.dark svg path {
+  fill: white;
+}
 
 ::selection {
   color: black;
@@ -91,8 +98,8 @@ body {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 1.25rem;
   margin: 0;
-  background-color: var(--very-dark);
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
   position: relative;
 }
 
@@ -130,7 +137,8 @@ section h2::after {
   transform: translateY(2rem);
 }
 
-.btn {
+.btn,
+svg {
   cursor: pointer;
 }
 
@@ -144,27 +152,8 @@ section h2::after {
     display: flex;
     justify-content: space-between;
     opacity: 0.8;
-    gap: 1.5rem;
-}
-
-.socials .icon {
-  width: 30px;
-  height: 30px;
-}
-
-.github .icon {
-  /* GitHub icon by Icons8 */
-  background: no-repeat url("../logos/socials/github.png") center;
-}
-
-.linkedin .icon {
-  /* LinkedIn 2 icon by Icons8 */
-  background: no-repeat url("../logos/socials/linkedin.png") center;
-}
-
-.mail .icon {
-  /* Mail icon by Icons8 */
-  background: no-repeat url("../logos/socials/mail.png") center;
+    gap: 0.8rem;
+    align-items: center;
 }
 
 .show-from-bottom {
@@ -197,3 +186,7 @@ section h2::after {
     transform: translateX(0);
   }
 }
+
+// All icons are from icon8 and 
+// https://icons8.com/
+// https://iconscout.com/

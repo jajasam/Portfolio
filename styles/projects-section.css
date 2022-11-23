@@ -88,7 +88,7 @@
 }
 
 .code_btn {
-    color: white;
+    color: var(--main-text-color);
 }
 
 .coming-soon {

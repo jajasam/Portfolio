@@ -1,6 +1,8 @@
+import { skillsLogos } from "../logos/skills/skillsLogos.js"
+
 const skillsContainer = document.querySelector(".skills_container");
 
-const skills = ["HTML","CSS", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma", "Accessibility", "Responsive Design"];
+const skills = ["HTML5","CSS3", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma", "Accessibility", "Responsive Design"];
 
 function displaySkills () {
     let markup = "";
@@ -8,7 +10,9 @@ function displaySkills () {
     for (let i = 0; i < skills.length; i++) {
         markup += `
             <li class="skill">
-                <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}" width="auto" height="80px">
+                <span class="skill-logo">
+                    ${skillsLogos[`${skills[i]}`]}
+                </span>
                 <p>${skills[i]}</p>
             </li>`
     }
