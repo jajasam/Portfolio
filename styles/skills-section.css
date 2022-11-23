@@ -37,10 +37,6 @@
     letter-spacing: 1.5px;
 }
 
-.skill img {
-    height: 80px;
-}
-
 .skill:hover,
 .skill:focus {
     transform: scale(1.2);

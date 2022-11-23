@@ -8,7 +8,7 @@ function displaySkills () {
     for (let i = 0; i < skills.length; i++) {
         markup += `
             <li class="skill">
-                <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}">
+                <img src="./logos/skills/${skills[i]}.png" alt="${skills[i]}" width="auto" height="80px">
                 <p>${skills[i]}</p>
             </li>`
     }
