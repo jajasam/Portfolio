@@ -184,7 +184,8 @@ h1 span {
     }
 
     .hero_section img {
-        width: 200px !important;
+        width: 200px;
+        height: 200px;
         border-radius: 50% !important;
         border: 3px solid var(--light);
     }
