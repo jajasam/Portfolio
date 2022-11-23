@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
     }
 
     langBtns.forEach(btn => btn.classList.remove("current"))
-    document.querySelector(`[data-lang="${lang}"]`).classList.add("current")
+    document.querySelector(`[data-lang="${lang}"]`)?.classList.add("current")
 
     '[data-id="box1"]'
 })
