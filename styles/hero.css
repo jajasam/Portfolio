@@ -17,7 +17,7 @@
 .hero_section .content .top {
     display: flex;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -79,10 +79,10 @@ h1 span {
     transition: all 0.4s ease;
     letter-spacing: 1.2px;
     font-size: 1rem;
-    height: 40px;
-    width: 160px;
     text-align: center;
+    height: 40px;
     line-height: 40px;
+    min-width: 180px;
 }
 
 .contact-btn {
@@ -148,7 +148,7 @@ h1 span {
     }
 
     .hero_section .content {
-        gap: 0;
+        gap: 2rem;
         margin: 4rem auto !important;
         justify-content: normal;
     }
@@ -209,6 +209,14 @@ h1 span {
 
     .colored-shape {
         display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .intro-text div {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
     }
 }
 

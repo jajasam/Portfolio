@@ -18,13 +18,13 @@
         <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" id="about-title">About</a>
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" id="skills-title">Skills</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" id="projects-title">Projects</a>
                 </li>
             </ul>
         </nav>
@@ -34,13 +34,19 @@
             <nav class="left nav-bar">
                 <ul>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" id="about-title">
+                            About
+                        </a>
                     </li>
                     <li>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills" id="skills-title">
+                            Skills
+                        </a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a href="#projects" id="projects-title">
+                            Projects
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -72,7 +78,7 @@
                 </div>
                 <div class="lang-btns">
                     <p class="lang-btn" data-lang="fr">FR</p>
-                    <p class="lang-btn current" data-lang="en">EN</p>
+                    <p class="lang-btn" data-lang="en">EN</p>
                 </div>
                 </div>
             </div>
@@ -87,12 +93,12 @@
                     </div>
                     <div class="intro-text">
                         <div class="wrapper">
-                            <h1>Hello I'm <span>Jana Samson</span></h1>
+                            <h1 id="intro">Hello I'm <span>Jana Samson</span></h1>
                         </div>
-                        <p>Front-End Web Developer</p>
+                        <p id="role">Front-End Web Developer</p>
                         <div>
-                            <a href="mailto:jana.samson@hotmail.fr" class="contact-btn">Contact me</a>
-                            <a href="" class="resume-btn">Resume</a>
+                            <a href="mailto:jana.samson@hotmail.fr" class="contact-btn" id="contact-me">Contact me</a>
+                            <a href="" class="resume-btn" id="resume">Resume</a>
                         </div>
                     </div>
                 </div>
@@ -121,24 +127,24 @@
             </div>
         </section>
         <section id="about" class="about_section container">
-            <h2 data-animate="animate-x">About</h2>
-            <p data-animate="animate-y">
+            <h2 data-animate="animate-x" id="about-title">About</h2>
+            <p data-animate="animate-y" id="about-text">
                 Hello, I'm Jana! I'm 22 years old and I'm a self-taught developer from Montreal. I have been learning web development for over a year through online resources such as FreeCodeCamp, The Odin Project and CodeCademy. I spent a lot of time practicing by building different projects. I was also able to work on real projects on a team during my internship in an agency. This experience confirmed that I wanted to stay in web development and I'm now looking for the next step. My current goal is to level up my skill set as I deliver business value. I am a friendly, hard-working and passionate person. I attach grand importance to details and responsive design.
             </p>
         </section>
         <section id="skills" class="skills_section">
-            <h2 data-animate="animate-x" class="container">Skills</h2>
+            <h2 data-animate="animate-x" class="container" id="skills-title">Skills</h2>
             <ul class="skills_container" data-animate="animate-y"></ul>
         </section>
         <section id="projects" class="projects_section container">
-            <h2 data-animate="animate-x">Projects</h2>
+            <h2 data-animate="animate-x" id="projects-title">Projects</h2>
             <ul class="projects_container"></ul>
         </section>
     </main>
     <footer>
         <div class="container">
             <div class="contact">
-                <p>Let's get in touch</p>
+                <p id="get-in-touch">Let's get in touch</p>
                 <a href="mailto:jana.samson@hotmail.fr" class="email">jana.samson@hotmail.fr</a>
             </div>
             <div class="socials">
@@ -161,7 +167,7 @@
                 </ul>
             </div>
         </div>
-        <small>2022 - By Jana Samson</small>
+        <small id="info">2022 - By Jana Samson</small>
     </footer>
 </body>
 </html>

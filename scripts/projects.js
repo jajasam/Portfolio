@@ -14,7 +14,7 @@ function displayProjects (lang = 'en') {
             <img src="${preview}" alt="${title}" class="project-preview" />
             ${
                 comingSoon ?
-                "<span class='ribbon'>Coming Soon</span>" : ""
+                "<span class='ribbon' id='coming-soon'>Coming soon</span>" : ""
             }
             <div class="project-infos">
                 <h3>${title}</h3>
