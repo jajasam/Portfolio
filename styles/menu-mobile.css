@@ -8,46 +8,33 @@
     position: absolute;
     right: 2rem;
     display: none;
+    z-index: 300;
 }
 
 .hamburger-menu div {
     height: 2px;
     background-color: var(--main-text-color);
     border-radius: 2px;
-    transition: transform 0.8s ease;
+    transition: transform 0.5s ease;
 }
 
-.hamburger-menu-close {
-    width: 25px;
-    height: 25px;
-    z-index: 600;
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
+.hamburger-menu.close div:first-child {
+    transform: rotate(45deg) translate(3px, 6px);
 }
 
-.hamburger-menu-close::before,
-.hamburger-menu-close::after  {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background-color: white;
-    opacity: 0.6;
+.hamburger-menu.close div:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
 }
 
-.hamburger-menu-close::before {
-    transform: rotate(-45deg);
-}
-
-.hamburger-menu-close::after {
-    transform: rotate(45deg);
+.hamburger-menu.close div:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, -7px);
 }
 
 .menu-modal {
     position: fixed;
     width: 100%;
-    height: 0;
+    height: 100vh;
     margin: 0;
     z-index: 300;
     display: flex;
@@ -58,16 +45,12 @@
     text-align: center;
     background-color: var(--light);
     transition: all 0.5s ease;
-    opacity: 0;
+    transform: translateX(100vw);
     visibility: hidden;
 }
 
-.menu-modal.open {
-    transform: scale(1);
-    opacity: 1;
-    height: 100vh;
-    right: 0;
-    top: 0;
+.menu-modal.active {
+    transform: translateX(0);
     visibility: visible;
 }
 
@@ -77,18 +60,10 @@
     align-items:center; 
     justify-content:center;
     position: relative;
+    overflow: scroll;
 }
 
-.menu-modal ul li {
-    transition: all .9s ease;
-    opacity: 0;
-}
-
-.menu-modal ul li {
-    transform: translateY(-100vh);
-}
-
-.menu-modal.open ul li {
+.menu-modal.active ul li {
     transform: translateY(0) !important;
     transition: all .8s ease;
     opacity: 1;
@@ -121,7 +96,7 @@
     color: white;
 }
 
-.menu-modal .hamburger-menu-close {
+.menu-modal .hamburger-menu.close {
     position: absolute;
 }
 
