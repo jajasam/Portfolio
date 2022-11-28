@@ -4,6 +4,7 @@ import { englishContent } from '../lang/englishContent.js'
 const langBtns = document.querySelectorAll(".lang-btn")
 
 langBtns.forEach(btn => btn.addEventListener('click', () => {
+    window.location.reload();
     if (btn.dataset.lang === 'fr') {
         window.localStorage.setItem('lang', 'fr');
         translateToFrench()
@@ -26,8 +27,6 @@ window.addEventListener('load', () => {
 
     langBtns.forEach(btn => btn.classList.remove("current"))
     document.querySelector(`[data-lang="${lang}"]`)?.classList.add("current")
-
-    '[data-id="box1"]'
 })
 
 function translateToFrench () {

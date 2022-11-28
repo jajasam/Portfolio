@@ -38,6 +38,14 @@ const projects = [
     "en":
         [
             {
+                "title": "Designo",
+                "tags": ["HTML", "CSS", "REACT", "SASS", "FIGMA"],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+                "linkToDemo": "#",
+                "linkToCode": "#",
+                "preview": "#"
+            },
+            {
                 "title": "E-commerce",
                 "tags": ["HTML", "CSS", "REACT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
