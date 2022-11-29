@@ -1,4 +1,4 @@
-export const frenchContent = {
+export const frContent = {
         "about-title": "À propos",
         "skills-title": "Compétences",
         "projects-title": "Projets",

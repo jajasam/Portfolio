@@ -1,7 +1,13 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const menuModal = document.querySelector(".menu-modal");
 const body = document.querySelector("body");
-const navLinksMobile = document.querySelectorAll(".menu-modal li");
+const navLinksMobile = document.querySelectorAll(".menu-modal li")
+const settingsBtn = document.querySelectorAll(".menu-modal .settings *")
+
+function closeMenu () {
+    menuModal.classList.toggle("active");
+    body.style.overflow = "scroll";
+}
 
 hamburgerMenu.addEventListener("click", () => {
     menuModal.classList.toggle("active");
@@ -10,7 +16,5 @@ hamburgerMenu.addEventListener("click", () => {
     body.style.overflow = menuModal.classList.contains('active') ? 'hidden' : 'scroll';
 })
 
-navLinksMobile.forEach(link => link.addEventListener("click", () => {
-    menuModal.classList.toggle("active");
-    body.style.overflow = "scroll";
-}))
+navLinksMobile.forEach(link => link.addEventListener("click", closeMenu))
+settingsBtn.forEach(btn => btn.addEventListener("click", closeMenu))

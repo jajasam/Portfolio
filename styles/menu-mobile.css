@@ -84,20 +84,40 @@
     font-size: 2.5rem;
 }
 
-.menu-modal .lang-btn {
+.menu-modal .settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     position: absolute;
     left: 0.75rem;
-    top: 1rem;
-    font-family: 'syncopate', sans-serif;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
+    top: 0.15rem;
 }
 
-.menu-modal .hamburger-menu.close {
-    position: absolute;
+.menu-modal .lang-btns {
+    display: block;
+}
+
+.menu-modal .lang-btn {
+    font-family: 'syncopate', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    opacity: 0.8;
+    margin-top: -0.70rem;
+}
+
+.menu-modal .lang-btn.current {
+    display: none;
+}
+
+.menu-modal .theme-icon {
+    display: block;
+}
+
+.menu-modal .theme-icon svg path {
+    fill: #FFF;
+    opacity: 0.8;
 }
 
 @media screen and (max-width:768px) {

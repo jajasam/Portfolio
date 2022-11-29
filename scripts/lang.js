@@ -1,16 +1,31 @@
-import { frenchContent } from '../lang/frenchContent.js'
-import { englishContent } from '../lang/englishContent.js'
+import { frContent } from '../lang/fr.js';
+import { enContent } from '../lang/en.js';
+
+const langBtnsContainer = document.querySelectorAll('.lang-btns')
+
+langBtnsContainer.forEach(container => container.innerHTML = 
+    `<p 
+        class="lang-btn" 
+        data-lang="fr">
+        FR
+    </p>
+    <p 
+        class="lang-btn"
+        data-lang="en">
+        EN
+    </p>`
+)
 
 const langBtns = document.querySelectorAll(".lang-btn")
 
 langBtns.forEach(btn => btn.addEventListener('click', () => {
-    window.location.reload();
+    window.location.reload()
     if (btn.dataset.lang === 'fr') {
         window.localStorage.setItem('lang', 'fr');
-        translateToFrench()
+        translate('fr')
     } else {
         window.localStorage.setItem('lang', 'en');
-        translateToEnglish()
+        translate('en')
     }
 
     langBtns.forEach(btn => btn.classList.remove("current"))
@@ -19,28 +34,15 @@ langBtns.forEach(btn => btn.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
     const lang = window.localStorage.getItem('lang')
-    if (lang == 'fr') {
-        translateToFrench();
-    } else {
-        translateToEnglish();
-    }
-
-    langBtns.forEach(btn => btn.classList.remove("current"))
-    document.querySelector(`[data-lang="${lang}"]`)?.classList.add("current")
+    translate(lang);
 })
 
-function translateToFrench () {
-    document.title = "Portfolio de Jana Samson";
-
-    for (const [key, value] of Object.entries(frenchContent)) {
+function translate(lang) {
+    for (const [key, value] of Object.entries(lang === 'en' ? enContent : frContent)) {
         document.querySelectorAll(`#${key}`).forEach(elem => elem.textContent = `${value}`)
     }
-}
 
-function translateToEnglish () {
-    document.title = "Jana Samson's Portfolio";
-
-    for (const [key, value] of Object.entries(englishContent)) {
-        document.querySelectorAll(`#${key}`).forEach(elem => elem.textContent = `${value}`)
-    }
+    //update lang btns
+    langBtns.forEach(btn => btn.classList.remove("current"))
+    document.querySelector(`[data-lang="${lang}"]`)?.classList.add("current")
 }
