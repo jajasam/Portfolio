@@ -171,13 +171,12 @@ svg {
   }
 
   section h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem !important;
   }
 
   section h2::after {
-    transform: translateY(2rem);
-    width: 1.5rem;
+    transform: translateY(2.25rem);
   }
 }
 
