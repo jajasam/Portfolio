@@ -20,3 +20,10 @@ function displaySkills () {
 };
 
 displaySkills();
+
+const skillsElems = document.querySelectorAll('.skill')
+
+skillsElems.forEach(skill => skill.addEventListener('click', () =>  {
+    skillsElems.forEach(skill => skill.classList.remove('show'))
+    skill.classList.add('show')
+}))

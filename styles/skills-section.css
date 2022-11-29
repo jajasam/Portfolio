@@ -40,12 +40,14 @@
 }
 
 .skill:hover .skill-logo,
-.skill:focus .skill-logo {
+.skill:focus .skill-logo,
+.skill.show .skill-logo{
     transform: scale(1.2);
 }
 
 .skill:hover .skill-logo svg path,
-.skill:focus .skill-logo svg path {
+.skill:focus .skill-logo svg path,
+.skill.show .skill-logo svg path {
     fill: var(--light);
 }
 
@@ -58,7 +60,8 @@
 
 
 .skill:hover p,
-.skill:focus p {
+.skill:focus p,
+.skill.show {
     color: var(--light);
     opacity: 1;
 }
