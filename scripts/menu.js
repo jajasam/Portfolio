@@ -11,6 +11,6 @@ hamburgerMenu.addEventListener("click", () => {
 })
 
 navLinksMobile.forEach(link => link.addEventListener("click", () => {
-    menuModal.classList.toggle("open");
+    menuModal.classList.toggle("active");
     body.style.overflow = "scroll";
 }))

@@ -6,4 +6,5 @@ import './scripts/menu.js';
 import './scripts/socials.js';
 import './scripts/lang.js';
 import './scripts/theme.js';
-import "./scripts/loader.js";
+import './scripts/loader.js';
+import './scripts/navLinks.js';

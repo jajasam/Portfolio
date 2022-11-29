@@ -27,7 +27,7 @@
     flex-direction: column;
 }
 
-.project-infos h4 {
+.project-infos h3 {
     font-size: 1.5rem;
     margin: 0;
     padding-bottom: 0.5rem;
@@ -103,7 +103,7 @@
 }
 
 .coming-soon p,
-.coming-soon h4 {
+.coming-soon h3 {
     opacity: 0.6 !important;
 }
 
@@ -158,6 +158,7 @@
 
     .project .tags {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .project_btns {

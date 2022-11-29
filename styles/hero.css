@@ -19,6 +19,7 @@
     justify-content: space-between;
     gap: 4rem;
     align-items: center;
+    padding-left: 20px;
 }
 
 .intro-img {
@@ -83,12 +84,12 @@ h1 span {
     line-height: 40px;
     min-width: 160px;
     max-width: 200px;
+    font-weight: bold;
 }
 
 .contact-btn {
     color: white;
     background-color: var(--light);
-    font-weight: bold;
 }
 
 .contact-btn:hover,
@@ -169,6 +170,7 @@ h1 span {
     .hero_section .content .top {
         gap: 2rem !important;
         margin-top: 0 !important;
+        padding-left: 0;
     }
 
     .hero_section .intro-text {

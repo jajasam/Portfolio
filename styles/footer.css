@@ -25,6 +25,7 @@ footer .contact .email {
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
     color: var(--main-text-color);
+    max-width: 227px;
 }
 
 footer .contact .email::after {

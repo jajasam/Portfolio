@@ -42,31 +42,31 @@ const projects = [
                 "tags": ["HTML", "CSS", "REACT", "SASS", "FIGMA"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "#",
-                "linkToCode": "#",
+                "linkToCode": "https://github.com/jajasam/Designo",
                 "preview": "./projects-preview/Designo.png"
             },
             {
                 "title": "E-commerce",
-                "tags": ["HTML", "CSS", "REACT"],
+                "tags": ["HTML", "CSS", "REACT", "FIGMA"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "#",
-                "linkToCode": "#",
+                "linkToCode": "https://github.com/jajasam/Ecommerce-app",
                 "preview": "./projects-preview/Ecomm.avif"
             },
             {
                 "title": "To do list",
-                "tags": ["HTML", "CSS", "REACT"],
+                "tags": ["HTML", "CSS", "JAVASCRIPT", "FIGMA"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "https://jajasam.github.io/To-do-app/",
-                "linkToCode": "#",
+                "linkToCode": "https://github.com/jajasam/To-do-app",
                 "preview": "./projects-preview/Todo.avif"
             },
             {
                 "title": "This portfolio",
-                "tags": ["HTML", "CSS", "REACT"],
+                "tags": ["HTML", "CSS", "JAVASCRIPT"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
                 "linkToDemo": "janasamson.com",
-                "linkToCode": "#",
+                "linkToCode": "https://github.com/jajasam/Portfolio",
                 "preview": "./projects-preview/Portfolio.avif"
             },
             {

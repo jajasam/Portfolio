@@ -7,10 +7,10 @@
     content: "";
     position: absolute;
     width: 100vw;
-    height: 110%;
+    height: 116%;
     background-color: var(--skills-bg);
     z-index: -1;
-    top: -5%;
+    top: -8%;
 }
 
 .skills_container {
@@ -73,7 +73,6 @@
     .skill {
         font-size: 1rem;
         text-align: center;
-        height: 60px;
     }
 
     .skill svg path {
