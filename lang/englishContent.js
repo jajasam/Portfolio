@@ -3,7 +3,7 @@ export const englishContent =
                 "about-title": "About",
                 "skills-title": "Skills",
                 "projects-title": "Projects",
-                "intro": "Hello, I'm Jana Samson",
+                "intro": "Hello, I'm",
                 "role": "Front-End Web Developer",
                 "contact-me": "Contact Me",
                 "resume": "Resume",

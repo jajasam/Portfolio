@@ -52,7 +52,7 @@ h1 {
     margin: 0;
     font-family: 'Oswald', sans-serif;
     transform: translateY(100%);
-    animation: revealTextUp 0.8s forwards 0.5s;
+    animation: revealTextUp 0.8s forwards 1.5s;
     font-weight: 400;
     text-transform: uppercase;
     /* color: var(--light); */
@@ -88,12 +88,13 @@ h1 span {
 .contact-btn {
     color: white;
     background-color: var(--light);
+    font-weight: bold;
 }
 
 .contact-btn:hover,
 .contact-btn:focus {
     background-color: rgba(207, 81, 56, 0.6);
-    font-weight: bold;
+    opacity: 0.6;
 }
 
 .resume-btn {

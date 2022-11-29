@@ -2,7 +2,7 @@ export const frenchContent = {
         "about-title": "À propos",
         "skills-title": "Compétences",
         "projects-title": "Projets",
-        "intro": "Bonjour, je suis Jana Samson",
+        "intro": "Bonjour, je suis",
         "role": "Développeuse Web Front-End",
         "contact-me": "Me contacter",
         "resume": "CV",
