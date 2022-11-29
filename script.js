@@ -1,3 +1,4 @@
+import './scripts/navLinks.js';
 import './scripts/projects.js';
 import './scripts/scrollingAnimations.js';
 import './scripts/scrollingEvents.js';
@@ -7,4 +8,3 @@ import './scripts/socials.js';
 import './scripts/lang.js';
 import './scripts/theme.js';
 import './scripts/loader.js';
-import './scripts/navLinks.js';
