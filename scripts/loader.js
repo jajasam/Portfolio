@@ -1,8 +1,9 @@
 const loader = document.querySelector('.loader')
+const body = document.querySelector('body')
 
 window.addEventListener('load', () => {
     setTimeout(() => {
-        loader.style.visibiliy = 'hidden';
         loader.style.display = 'none'
+        body.style.visibility = 'visible';
     }, 1000);
 })

@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: visible;
 }
 
 .light .loader {
@@ -24,10 +25,10 @@
 
 .loader::after {
     content: "";
-    width: 80px;
-    height: 80px;
-    border: 12px solid #ebebeb;
-    border-top: 12px solid var(--light);
+    width: 85px;
+    height: 85px;
+    border: 8px solid #ebebeb;
+    border-top: 8px solid var(--light);
     border-radius: 50%;
     animation: loading 0.7s ease infinite;
     position: relative;
