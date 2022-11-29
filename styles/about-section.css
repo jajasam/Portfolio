@@ -1,13 +1,13 @@
 #about p {
     line-height: 1.8;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: justify;
     transform: translateY(200px);
 }
 
 @media screen and (max-width: 768px) {
     #about p {
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 }
 
