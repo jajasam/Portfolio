@@ -1,6 +1,6 @@
 .hero_section {
     height: 100vh;
-    min-height: 700px;
+    min-height: 600px;
     max-height: 1000px;
     display: flex;
     padding-top: 3rem;
@@ -159,7 +159,7 @@ h1 span {
 
     .hero_section .content {
         gap: 2rem;
-        margin: 4rem auto !important;
+        margin: 2rem auto !important;
         justify-content: normal;
     }
 
@@ -168,7 +168,7 @@ h1 span {
     }
 
     .hero_section .content .top {
-        gap: 2rem !important;
+        gap: 1rem !important;
         margin-top: 0 !important;
         padding-left: 0;
     }
@@ -183,11 +183,11 @@ h1 span {
     }
 
     .intro-text h1 {
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     .hero_section .content .intro-text p {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
 
     .hero_section img {
@@ -235,12 +235,17 @@ h1 span {
         align-items: center;
     }
 
+    .hero_section .intro-img img {
+        width: 150px;
+        height: 150px;
+    }
+
     .intro-text h1 {
         font-size: 1.75rem;
     }
 
     .hero_section .content .intro-text p {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 }
 

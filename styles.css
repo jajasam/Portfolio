@@ -16,9 +16,9 @@
 @import "./styles/footer.css";
 @import "./styles/loader.css";
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -94,7 +94,7 @@ body {
   background-color: var(--bg-color);
   color: var(--main-text-color);
   position: relative;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 main {
