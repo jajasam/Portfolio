@@ -67,11 +67,6 @@ svg path {
   fill: white;
 }
 
-::selection {
-  color: black;
-  background-color: white;
-}
-
 @keyframes revealTextUp {
   to {
     transform: translateY(0%);
@@ -176,7 +171,7 @@ svg {
   }
 
   section h2::after {
-    transform: translateY(2.25rem);
+    transform: translateY(2.4rem);
   }
 }
 
