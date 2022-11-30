@@ -58,8 +58,6 @@
 .project_btns {
     display: flex;
     gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .project_btns .btn {
@@ -164,6 +162,8 @@
 
     .project_btns {
         margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .coming-soon {
