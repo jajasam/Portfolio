@@ -36,6 +36,7 @@
     top: -20px;
     background-color: var(--light);
     z-index: -1;
+    box-shadow: var(--box-shadow);
 }
 
 .hero_section .intro-img img {
@@ -90,6 +91,7 @@ h1 span {
 .contact-btn {
     color: white;
     background-color: var(--light);
+    box-shadow: var(--btn-box-shadow);
 }
 
 .contact-btn:hover,
@@ -101,19 +103,16 @@ h1 span {
 .resume-btn {
     color: white;
     border: 1px solid var(--light);
+    box-shadow: var(--btn-box-shadow);
 }
-
+ 
 .light .resume-btn {
     color: var(--light);
 }
 
-.light .resume-btn:hover {
-    color: black;
-}
-
 .resume-btn:hover,
 .resume-btn:focus {
-    color: var(--light);
+    background-color: rgba(0,0,0,0.05);    
 }
 
 .hero_section .content div.bottom {
@@ -195,6 +194,7 @@ h1 span {
         height: 200px;
         border-radius: 50% !important;
         border: 3px solid var(--light);
+        box-shadow: var(--box-shadow);
     }
 
     .hero_section .content .socials {
