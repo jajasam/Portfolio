@@ -43,7 +43,11 @@ header .right {
     width: 400px;
 }
 
-div.lang-btns {
+.logo {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.lang-btns {
     display: flex;
     gap: 0.8rem;
 }
