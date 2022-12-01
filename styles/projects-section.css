@@ -7,13 +7,20 @@
     gap: 3rem;
     align-items: center;
     height: 300px;
-    padding: 1rem 0;
+    padding: 0.5rem 1rem;
     transform: translateY(200px);
 }
 
 .project-preview {
     border-radius: 8px;
-    box-shadow: 1px 3px 1px 1px rgba(225,225,225, 0.1);
+    box-shadow: var(--box-shadow);
+}
+
+.project-preview img {
+    min-height: 100%;
+    height: auto;
+    width: 300px;
+    overflow: hidden;
 }
 
 .project:not(:last-child) {
@@ -37,13 +44,15 @@
     opacity: 0.7;
     letter-spacing: normal;
     margin: 0;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .project-infos .tags {
     display: flex;
     gap: 0.75rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .project-infos .tag {

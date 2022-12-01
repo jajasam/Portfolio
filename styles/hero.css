@@ -91,7 +91,7 @@ h1 span {
 .contact-btn {
     color: white;
     background-color: var(--light);
-    box-shadow: var(--btn-box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .contact-btn:hover,
@@ -103,7 +103,7 @@ h1 span {
 .resume-btn {
     color: white;
     border: 1px solid var(--light);
-    box-shadow: var(--btn-box-shadow);
+    box-shadow: var(--box-shadow);
 }
  
 .light .resume-btn {
@@ -153,11 +153,11 @@ h1 span {
 @media screen and (max-width: 768px) {
     .hero_section {
         margin-bottom: 0;
-        padding-top: 0;
+        padding-top: 1rem;
     }
 
     .hero_section .content {
-        gap: 2rem;
+        gap: 3rem;
         margin: 2rem auto !important;
         justify-content: normal;
     }
@@ -182,7 +182,7 @@ h1 span {
     }
 
     .intro-text h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .hero_section .content .intro-text p {
