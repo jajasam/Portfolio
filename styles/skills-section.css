@@ -47,6 +47,9 @@
     transform: scale(1.2);
 }
 
+.skill:hover .skill-logo svg,
+.skill:hover .skill-logo svg,
+.skill:focus .skill-logo svg,
 .skill:hover .skill-logo svg path,
 .skill:focus .skill-logo svg path,
 .skill.show .skill-logo svg path {
