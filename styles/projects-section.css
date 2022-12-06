@@ -147,7 +147,7 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        /* padding: 2rem 1rem; */
+        padding: 2rem 1rem;
         gap: 1rem;
         height: auto;
     }
@@ -167,12 +167,20 @@
     .project .tags {
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-infos p {
+        width: 90%;
+        margin: auto;
     }
 
     .project_btns {
         margin: auto;
         flex-wrap: wrap;
         justify-content: center;
+        padding-left: 3rem;
+        margin-top: 2rem;
     }
 
     .coming-soon {
