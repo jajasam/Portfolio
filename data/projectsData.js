@@ -41,7 +41,7 @@ const projects = [
                 "title": "Designo",
                 "tags": ["HTML", "CSS", "REACT", "SASS", "FIGMA"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                "linkToDemo": "https://famous-kitsune-382996.netlify.app",
+                "linkToDemo": "https://chic-palmier-e81f0f.netlify.app/",
                 "linkToCode": "https://github.com/jajasam/Designo",
                 "preview": "./projects-preview/Designo.png"
             },
@@ -49,7 +49,7 @@ const projects = [
                 "title": "E-commerce",
                 "tags": ["HTML", "CSS", "REACT", "FIGMA"],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                "linkToDemo": "#",
+                "linkToDemo": "https://luxury-moonbeam-ff97f7.netlify.app",
                 "linkToCode": "https://github.com/jajasam/Ecommerce-app",
                 "preview": "./projects-preview/Ecomm.png"
             },

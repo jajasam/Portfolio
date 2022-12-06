@@ -5,9 +5,16 @@
     transform: translateY(200px);
 }
 
+@media screen and (max-width: 1111px) {
+    #about p {
+        padding: 0 1.15rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #about p {
         font-size: 1.15rem;
+        padding: 0 1.15rem;
     }
 }
 
