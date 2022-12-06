@@ -153,7 +153,7 @@ h1 span {
 
 @media screen and (max-width: 768px) {
     .hero_section {
-        margin-bottom: 0;
+        margin-bottom: 4rem;
         padding-top: 1rem;
     }
 
@@ -168,9 +168,13 @@ h1 span {
     }
 
     .hero_section .content .top {
-        gap: 1rem !important;
+        gap: 2rem !important;
         margin-top: 0 !important;
         padding-left: 0;
+    }
+
+    .hero_section .content .intro-text p {
+        margin-bottom: 2rem;
     }
 
     .hero_section .intro-text {
@@ -240,11 +244,7 @@ h1 span {
         width: 150px;
         height: 150px;
     }
-
-    .intro-text h1 {
-        font-size: 1.75rem;
-    }
-
+    
     .hero_section .content .intro-text p {
         font-size: 1.25rem;
     }

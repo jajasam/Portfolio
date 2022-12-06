@@ -59,6 +59,7 @@ svg path {
   fill: black;
 }
 
+.dark svg,
 .dark svg path {
   fill: white;
 }
