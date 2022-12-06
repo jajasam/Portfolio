@@ -177,7 +177,6 @@
 
     .project_btns {
         margin: auto;
-        flex-wrap: wrap;
         justify-content: center;
         padding-left: 3rem;
         margin-top: 2rem;
@@ -188,9 +187,13 @@
     }
 }
 
-@media screen and (max-width: 330px) { 
+@media screen and (max-width: 380px) { 
+    .project_btns {
+        padding-left: 0;
+    }
+
     .project_btns .btn {
-        width: 100px;
+        min-width: 100px;
     }
 }
 
