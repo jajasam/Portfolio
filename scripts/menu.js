@@ -7,6 +7,7 @@ const settingsBtn = document.querySelectorAll(".menu-modal .settings *")
 function closeMenu () {
     menuModal.classList.toggle("active");
     body.style.overflow = "scroll";
+    hamburgerMenu.classList.toggle("close")
 }
 
 hamburgerMenu.addEventListener("click", () => {
