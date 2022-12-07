@@ -44,5 +44,5 @@ function translate(lang) {
 
     //update lang btns
     langBtns.forEach(btn => btn.classList.remove("current"))
-    document.querySelectorAll(`[data-lang="${lang}"]`)?.forEach(btn => btn.classList.add("current"))
+    document.querySelectorAll(`[data-lang="${lang || 'en'}"]`)?.forEach(btn => btn.classList.add("current"))
 }
