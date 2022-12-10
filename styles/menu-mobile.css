@@ -49,6 +49,7 @@
     padding: 3rem;
     text-align: center;
     right: 0;
+    overflow: scroll;
 }
 
 .menu-modal.active {
