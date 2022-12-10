@@ -33,20 +33,22 @@
 
 .menu-modal {
     position: fixed;
-    width: 100%;
+    width: 300px;
     height: 100vh;
     margin: 0;
     z-index: 300;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    line-height: 70px;
-    text-align: center;
+    align-items: center;
     background-color: var(--light);
     transition: all 0.5s ease;
     transform: translateX(100vw);
     visibility: hidden;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    text-align: center;
+    right: 0;
 }
 
 .menu-modal.active {
@@ -57,10 +59,9 @@
 .menu-modal ul {
     display: flex; 
     flex-direction: column;
-    align-items:center; 
-    justify-content:center;
     position: relative;
     overflow: scroll;
+    gap: 2rem;
 }
 
 .menu-modal.active ul li {
@@ -72,27 +73,18 @@
 .menu-modal ul li a {
     color: white;
     text-transform: uppercase;
-    font-family: 'syncopate', sans-serif;
+    font-family: 'oswald', sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1.2px;
     transition: font-size 0.2s ease;
-}
-
-.menu-modal ul li a:focus,
-.menu-modal ul li a:active {
-    font-size: 2.5rem;
 }
 
 .menu-modal .settings {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
-    position: absolute;
-    left: 0.75rem;
-    top: 1rem;
-    line-height: 20px;
+    margin-top: 2rem;
 }
 
 .menu-modal .lang-btns {
@@ -100,7 +92,7 @@
 }
 
 .menu-modal .lang-btn {
-    font-family: 'syncopate', sans-serif;
+    font-family: 'quattrocento sans', sans-serif;
     font-size: 1.5rem;
     color: white;
     font-weight: 700;
@@ -121,7 +113,7 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 950px) {
     .hamburger-menu {
         display: flex;
     }
