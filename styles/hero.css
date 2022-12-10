@@ -164,6 +164,10 @@ h1 span {
 }
 
 @media screen and (max-width: 950px) {
+  .hero_section {
+    padding-top: 0;
+  }
+
   .hero_section .content {
     gap: 3rem;
     justify-content: normal;
@@ -206,8 +210,8 @@ h1 span {
   }
 
   .hero_section .intro-img img {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     border-radius: 0 0 25px 0;
   }
 
