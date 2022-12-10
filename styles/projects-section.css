@@ -17,9 +17,6 @@
 }
 
 .project-preview img {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
     object-fit: cover;
 }
 
