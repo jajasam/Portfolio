@@ -38,7 +38,7 @@
 .project-infos h3 {
     font-size: 1.5rem;
     margin: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
 }
 
 .project-infos .tags {
@@ -49,12 +49,12 @@
 }
 
 .project-infos .tag {
-    color: var(--main-text-color);
-    opacity: 0.6;
+    color: var(--light);
     font-size: 1rem;
-    border: 1px solid var(--border-color);
     border-radius: 50px;
-    padding: 0.10rem 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--light);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
 }
 
 .project_btns {
@@ -68,6 +68,8 @@
     position: relative;
     min-width: 120px;
     align-items: center;
+    color: var(--main-text-color);
+    font-weight: 400;
 }
 
 .project_btns .btn::after {
@@ -86,14 +88,6 @@
 .project_btns .btn:focus {
     font-weight: bold;
     letter-spacing: 1.2px;
-}
-
-.demo_btn {
-    color: var(--light);
-}
-
-.code_btn {
-    color: var(--main-text-color);
 }
 
 .coming-soon {
