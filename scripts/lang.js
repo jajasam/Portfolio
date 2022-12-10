@@ -42,6 +42,13 @@ function translate(lang) {
         document.querySelectorAll(`#${key}`).forEach(elem => elem.textContent = `${value}`)
     }
 
+    const resume = document.getElementById("resume-link"); 
+    if (lang === 'en') {
+        resume.href = './resume/Jana-Samson-Resume.pdf'
+    } else [
+        resume.href = './resume/Jana-Samson-CV.pdf'
+    ]
+
     //update lang btns
     langBtns.forEach(btn => btn.classList.remove("current"))
     document.querySelectorAll(`[data-lang="${lang || 'en'}"]`)?.forEach(btn => btn.classList.add("current"))
