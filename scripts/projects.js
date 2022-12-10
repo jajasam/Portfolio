@@ -2,12 +2,11 @@ import { projects } from '../data/projectsData.js'
 
 const projectsContainer = document.querySelector(".projects_container");
 
-function displayProjects (lang = 'en') {
-    const projectsInCurrentLang = projects[0][lang];
+function displayProjects () {
     let markup = projectsContainer.innerHTML;
 
-    for (let i = 0; i < projectsInCurrentLang.length; i++) {
-        const {title, tags, description, linkToDemo, linkToCode, preview, comingSoon} = projectsInCurrentLang[i];
+    for (let i = 0; i < projects.length; i++) {
+        const {title, tags, linkToDemo, linkToCode, preview, comingSoon} = projects[i];
 
         markup +=  `
         <li class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
@@ -23,7 +22,6 @@ function displayProjects (lang = 'en') {
                         tags.map(tag => `<li class="tag">${tag}</li>`).join('')
                     }
                 </ul>
-                <p>${description}</p>
                 <div class="project_btns">
                 ${
                     !comingSoon ?
