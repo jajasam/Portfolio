@@ -109,8 +109,12 @@ h1 span {
   gap: 5px;
 }
 
-.resume-btn span:nth-child(2) {
+.resume-btn svg {
   margin-top: -4px;
+}
+
+.resume-btn svg path {
+  fill: var(--light) !important;
 }
 
 .light .resume-btn {
@@ -121,6 +125,11 @@ h1 span {
 .resume-btn:focus {
   background-color: var(--light);
   color: white;
+}
+
+.resume-btn:hover svg path,
+.resume-btn:focus svg path {
+  fill: white !important;
 }
 
 .hero_section .content div.bottom {
