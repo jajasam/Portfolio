@@ -45,7 +45,7 @@
     transition: all 0.5s ease;
     transform: translateX(100vw);
     visibility: hidden;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--big-box-shadow);
     padding: 3rem;
     text-align: center;
     right: 0;

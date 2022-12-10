@@ -11,7 +11,6 @@
     background-color: var(--skills-bg);
     z-index: -1;
     top: -8%;
-    box-shadow: var(--dark-box-shadow);
 }
 
 .skills_container {
