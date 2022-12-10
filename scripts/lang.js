@@ -34,7 +34,7 @@ langBtns.forEach(btn => btn.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
     const lang = window.localStorage.getItem('lang')
-    translate(lang);
+    translate(lang || 'en');
 })
 
 function translate(lang) {
@@ -51,5 +51,5 @@ function translate(lang) {
 
     //update lang btns
     langBtns.forEach(btn => btn.classList.remove("current"))
-    document.querySelectorAll(`[data-lang="${lang || 'en'}"]`)?.forEach(btn => btn.classList.add("current"))
+    document.querySelectorAll(`[data-lang="${lang}"]`)?.forEach(btn => btn.classList.add("current"))
 }
