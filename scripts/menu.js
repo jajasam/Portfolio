@@ -15,6 +15,7 @@ hamburgerMenu.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("close")
 
     body.style.overflow = menuModal.classList.contains('active') ? 'hidden' : 'scroll';
+    body.classList.toggle('overlay');
 })
 
 navLinksMobile.forEach(link => link.addEventListener("click", closeMenu))
