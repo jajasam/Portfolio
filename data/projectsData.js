@@ -2,14 +2,14 @@ const projects = [
             {
                 "title": "Designo",
                 "tags": ["HTML", "CSS", "REACT", "SASS", "FIGMA"],
-                "linkToDemo": "https://chic-palmier-e81f0f.netlify.app/",
+                "linkToDemo": "https://gleeful-mochi-9b1f4e.netlify.app",
                 "linkToCode": "https://github.com/jajasam/Designo",
                 "preview": "./projects-preview/Designo.webp"
             },
             {
                 "title": "Audiophile",
                 "tags": ["HTML", "CSS", "REACT", "FIGMA"],
-                "linkToDemo": "https://luxury-moonbeam-ff97f7.netlify.app",
+                "linkToDemo": "https://dashing-torte-14e16c.netlify.app",
                 "linkToCode": "https://github.com/jajasam/Ecommerce-app",
                 "preview": "./projects-preview/Ecomm.webp"
             },
