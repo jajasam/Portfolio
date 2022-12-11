@@ -8,6 +8,7 @@ function closeMenu () {
     menuModal.classList.toggle("active");
     body.style.overflow = "scroll";
     hamburgerMenu.classList.toggle("close")
+    body.classList.toggle('overlay');
 }
 
 hamburgerMenu.addEventListener("click", () => {
