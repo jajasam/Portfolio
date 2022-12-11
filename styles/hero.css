@@ -113,8 +113,12 @@ h1 span {
   margin-top: -4px;
 }
 
-.resume-btn svg path {
+.light .resume-btn svg path {
   fill: var(--light) !important;
+}
+
+.dark .resume-btn svg path {
+  fill: white !important;
 }
 
 .light .resume-btn {
