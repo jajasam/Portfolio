@@ -126,6 +126,7 @@ svg {
 
 .btn {
   font-weight: 700;
+  filter: contrast(1.1);
 }
 
 .socials ul {

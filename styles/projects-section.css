@@ -52,6 +52,7 @@
     padding: 0.3rem 0.6rem;
     background-color: var(--light);
     box-shadow: var(--small-box-shadow);
+    filter: contrast(1.1);
 }
 
 .project_btns {
