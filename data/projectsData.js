@@ -23,7 +23,7 @@ const projects = [
             {
                 "title": "Portfolio",
                 "tags": ["HTML", "CSS", "JAVASCRIPT"],
-                "linkToDemo": "janasamson.com",
+                "linkToDemo": "https://janasamson.com",
                 "linkToCode": "https://github.com/jajasam/Portfolio",
                 "preview": "./projects-preview/Portfolio.webp"
             }
