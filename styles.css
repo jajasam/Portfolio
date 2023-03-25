@@ -46,6 +46,7 @@ html {
   --main-text-color: white;
   --skills-bg: var(--dark);
   --border-color: rgba(255,255,255, 0.6);
+  --project-border-color: rgba(255,255,255, 0.6);
   transition: all 0.7s ease-out;
 }
 

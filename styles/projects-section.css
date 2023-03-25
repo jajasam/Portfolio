@@ -13,7 +13,7 @@
 
 .project-preview {
     border-radius: 8px;
-    box-shadow: var(--big-box-shadow);
+    box-shadow: var(--small-box-shadow);
 }
 
 .project-preview img {
