@@ -19,7 +19,6 @@ langBtnsContainer.forEach(container => container.innerHTML =
 const langBtns = document.querySelectorAll(".lang-btn")
 
 langBtns.forEach(btn => btn.addEventListener('click', () => {
-    window.location.reload()
     if (btn.dataset.lang === 'fr') {
         window.localStorage.setItem('lang', 'fr');
         translate('fr')
