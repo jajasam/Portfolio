@@ -107,6 +107,7 @@ h1 span {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  display: none!important;
 }
 
 .resume-btn svg {
