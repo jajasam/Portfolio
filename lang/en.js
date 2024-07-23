@@ -3,11 +3,11 @@ export const enContent = {
         "skills-title": "Skills",
         "projects-title": "Projects",
         "intro": "Hello, I'm",
-        "role": "Front-End Web Developer",
+        "role": "Full Stack Developer",
         "contact-me": "Contact Me",
         "resume-text": "Resume",
-        "about-text": "Hello, I'm Jana! I'm a 22 years old self-taught developer from Montreal. I have been learning web development for over a year through online resources such as FreeCodeCamp, The Odin Project and CodeCademy. I spent a lot of time practicing by building different projects. I was also able to work on real projects with a team during my internship in an agency. This experience confirmed that I wanted to stay in web development and I'm now looking for the next step. My current goal is to level up my skill set as I deliver business value. I am a friendly, hard-working and passionate person. I attach grand importance to details and responsive design.",
+        "about-text": "Hello, I'm Jana, a 23-year-old self-taught full-stack developer with a strong background in UI/UX design. I'm passionate about both coding and business, finding joy in creating visually appealing and scalable software applications that solve real-world challenges and drive business success. I attach great importance to details and responsive design to ensure an optimal user experience.",
         "coming-soon": "Coming soon",
         "get-in-touch": "Let's get in touch",
-        "info": "2022 - By Jana Samson"
+        "info": "2024 - By Jana Samson"
 }

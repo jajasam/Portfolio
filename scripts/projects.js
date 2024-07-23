@@ -6,11 +6,11 @@ function displayProjects () {
     let markup = projectsContainer.innerHTML;
 
     for (let i = 0; i < projects.length; i++) {
-        const {title, tags, linkToDemo, linkToCode, preview, comingSoon} = projects[i];
+        const {title, tags, description, linkToDemo, linkToCode, preview, comingSoon} = projects[i];
 
         markup +=  `
         <li class="project ${comingSoon ? "coming-soon" : ""}" data-animate="animate-y">
-            <img src="${preview}" alt="${title}" class="project-preview" width="325px" height="240px" />
+            <img src="${preview}" alt="${title}" class="project-preview" width="360px" height="240px" />
             ${
                 comingSoon ?
                 "<span class='ribbon' id='coming-soon'>Coming soon</span>" : ""
@@ -24,9 +24,13 @@ function displayProjects () {
                 </ul>
                 <div class="project_btns">
                 ${
-                    !comingSoon ?
+                    !comingSoon && linkToCode ?
                         `<a target="_blank" href="${linkToDemo}" class="btn demo_btn">Demo</a>
                         <a target="_blank" href="${linkToCode}" class="btn code_btn">Code</a>` : ""
+                }
+                ${
+                    !comingSoon && !linkToCode ?
+                        `<a target="_blank" href="${linkToDemo}" class="btn demo_btn">Demo</a>` : ""
                 }
                 </div>
             </div> 

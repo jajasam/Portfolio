@@ -2,7 +2,7 @@ import { skillsLogos } from "../logos/skills/skillsLogos.js"
 
 const skillsContainer = document.querySelector(".skills_container");
 
-const skills = ["HTML5","CSS3", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma", "Accessibility", "Responsive Design"];
+const skills = ["HTML5","CSS3", "JavaScript", "React", "Tailwind", "VSCode", "Git", "GitHub", "Bitbucket", "Jira", "Figma", "Accessibility", "Responsive Design", "JQuery", "Node.js", "Firebase", "Docker",  "Vue.js"];
 
 function displaySkills () {
     let markup = "";
