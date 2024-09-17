@@ -2,7 +2,7 @@ const projects = [
             {
                 "title": "The Weekly Plate",
                 "tags": ["React", "Node.js", "Firebase", "Stripe API"],
-                "linkToDemo": "https://theweeklyplate.com",
+                "linkToDemo": "https://theweeklyplate.com/demo",
                 "linkToCode": null,
                 "preview": "./projects-preview/The-weekly-plate.png"
             },
